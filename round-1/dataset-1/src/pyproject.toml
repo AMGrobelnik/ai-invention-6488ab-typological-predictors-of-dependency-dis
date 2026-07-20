@@ -1,0 +1,15 @@
+[project]
+name = "ud-dependency-distance-dataset"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets==5.0.0",
+    "huggingface-hub==1.24.0",
+    "pandas==3.0.3",
+    "numpy==2.5.1",
+    "pyarrow==25.0.0",
+    "tqdm==4.69.0",
+    "loguru==0.7.3",
+    "requests==2.34.2",
+    "pyconll==3.3.1"
+]

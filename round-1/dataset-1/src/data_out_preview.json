@@ -1,0 +1,33 @@
+{
+  "datasets": [
+    {
+      "dataset": "ud_dependency_distances",
+      "examples": [
+        {
+          "input": "{\"treebank_name\": \"kpv_lattice\", \"language\": \"kpv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 5, \"deprel\": \"nsubj\", \"head_position\": 3, \"dependent_position\": 1, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "kpv-brat_2018:01",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"kpv_lattice\", \"language\": \"kpv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 5, \"deprel\": \"obl\", \"head_position\": 3, \"dependent_position\": 2, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "kpv-brat_2018:01",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"kpv_lattice\", \"language\": \"kpv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 5, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 3, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "3",
+          "metadata_sentence_id": "kpv-brat_2018:01",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        }
+      ]
+    }
+  ]
+}

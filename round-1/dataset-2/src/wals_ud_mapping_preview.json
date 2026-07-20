@@ -1,0 +1,202 @@
+{
+  "metadata": {
+    "created_date": "2026-07-19",
+    "wals_version": "2024.3",
+    "ud_version": "2.15",
+    "features_included": [
+      "1A",
+      "20A",
+      "26A",
+      "49A",
+      "51A"
+    ],
+    "mapping_methodology": "ISO 639-3 code matching between UD treebanks and WALS languages"
+  },
+  "mappings": {
+    "en_ewt": {
+      "ud_treebank": "en_ewt",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, reviews, emails, weblogs"
+    },
+    "en_gum": {
+      "ud_treebank": "en_gum",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "academic, fiction, news, spoken, web"
+    },
+    "en_lines": {
+      "ud_treebank": "en_lines",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "fiction"
+    },
+    "en_atis": {
+      "ud_treebank": "en_atis",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "en_childes": {
+      "ud_treebank": "en_childes",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    }
+  }
+}

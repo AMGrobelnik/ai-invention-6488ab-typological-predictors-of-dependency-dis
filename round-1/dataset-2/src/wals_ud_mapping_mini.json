@@ -1,0 +1,1471 @@
+{
+  "metadata": {
+    "created_date": "2026-07-19",
+    "wals_version": "2024.3",
+    "ud_version": "2.15",
+    "features_included": [
+      "1A",
+      "20A",
+      "26A",
+      "49A",
+      "51A"
+    ],
+    "mapping_methodology": "ISO 639-3 code matching between UD treebanks and WALS languages"
+  },
+  "mappings": {
+    "en_ewt": {
+      "ud_treebank": "en_ewt",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, reviews, emails, weblogs"
+    },
+    "en_gum": {
+      "ud_treebank": "en_gum",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "academic, fiction, news, spoken, web"
+    },
+    "en_lines": {
+      "ud_treebank": "en_lines",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "fiction"
+    },
+    "en_atis": {
+      "ud_treebank": "en_atis",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "en_childes": {
+      "ud_treebank": "en_childes",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "en_gentle": {
+      "ud_treebank": "en_gentle",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "fiction"
+    },
+    "en_gumreddit": {
+      "ud_treebank": "en_gumreddit",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "web"
+    },
+    "en_littleprince": {
+      "ud_treebank": "en_littleprince",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "fiction"
+    },
+    "en_partut": {
+      "ud_treebank": "en_partut",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "conversation"
+    },
+    "en_pronouns": {
+      "ud_treebank": "en_pronouns",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "grammar"
+    },
+    "en_pud": {
+      "ud_treebank": "en_pud",
+      "ud_language_code": "en",
+      "iso_639_3": "eng",
+      "wals_language_id": "eng",
+      "wals_language_name": "English",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "2",
+          "description": "Number of Cases",
+          "value_description": "2 cases"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "fr_gsd": {
+      "ud_treebank": "fr_gsd",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "fr_sequoia": {
+      "ud_treebank": "fr_sequoia",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "fr_alts": {
+      "ud_treebank": "fr_alts",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "fr_fqb": {
+      "ud_treebank": "fr_fqb",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news"
+    },
+    "fr_parisstories": {
+      "ud_treebank": "fr_parisstories",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "fr_partut": {
+      "ud_treebank": "fr_partut",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "conversation"
+    },
+    "fr_poitevindivital": {
+      "ud_treebank": "fr_poitevindivital",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "fr_pud": {
+      "ud_treebank": "fr_pud",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "fr_rhapsodie": {
+      "ud_treebank": "fr_rhapsodie",
+      "ud_language_code": "fr",
+      "iso_639_3": "fra",
+      "wals_language_id": "fre",
+      "wals_language_name": "French",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "7",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Prepositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "de_gsd": {
+      "ud_treebank": "de_gsd",
+      "ud_language_code": "de",
+      "iso_639_3": "deu",
+      "wals_language_id": "gbl",
+      "wals_language_name": "German (Berlin)",
+      "wals_features": {},
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "de_hdt": {
+      "ud_treebank": "de_hdt",
+      "ud_language_code": "de",
+      "iso_639_3": "deu",
+      "wals_language_id": "gbl",
+      "wals_language_name": "German (Berlin)",
+      "wals_features": {},
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news"
+    },
+    "de_lit": {
+      "ud_treebank": "de_lit",
+      "ud_language_code": "de",
+      "iso_639_3": "deu",
+      "wals_language_id": "gbl",
+      "wals_language_name": "German (Berlin)",
+      "wals_features": {},
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "fiction"
+    },
+    "de_pud": {
+      "ud_treebank": "de_pud",
+      "ud_language_code": "de",
+      "iso_639_3": "deu",
+      "wals_language_id": "gbl",
+      "wals_language_name": "German (Berlin)",
+      "wals_features": {},
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "es_ancora": {
+      "ud_treebank": "es_ancora",
+      "ud_language_code": "es",
+      "iso_639_3": "spa",
+      "wals_language_id": "spa",
+      "wals_language_name": "Spanish",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, fiction"
+    },
+    "es_gsd": {
+      "ud_treebank": "es_gsd",
+      "ud_language_code": "es",
+      "iso_639_3": "spa",
+      "wals_language_id": "spa",
+      "wals_language_name": "Spanish",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "es_coser": {
+      "ud_treebank": "es_coser",
+      "ud_language_code": "es",
+      "iso_639_3": "spa",
+      "wals_language_id": "spa",
+      "wals_language_name": "Spanish",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "spoken"
+    },
+    "es_pud": {
+      "ud_treebank": "es_pud",
+      "ud_language_code": "es",
+      "iso_639_3": "spa",
+      "wals_language_id": "spa",
+      "wals_language_name": "Spanish",
+      "wals_features": {
+        "1A": {
+          "value": "3",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Average"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "1",
+          "description": "Number of Cases",
+          "value_description": "No morphological case-marking"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "ru_syntagrus": {
+      "ud_treebank": "ru_syntagrus",
+      "ud_language_code": "ru",
+      "iso_639_3": "rus",
+      "wals_language_id": "rus",
+      "wals_language_name": "Russian",
+      "wals_features": {
+        "1A": {
+          "value": "4",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Moderately large"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "6",
+          "description": "Number of Cases",
+          "value_description": "6-7 cases"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, fiction"
+    },
+    "ru_gsd": {
+      "ud_treebank": "ru_gsd",
+      "ud_language_code": "ru",
+      "iso_639_3": "rus",
+      "wals_language_id": "rus",
+      "wals_language_name": "Russian",
+      "wals_features": {
+        "1A": {
+          "value": "4",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Moderately large"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "6",
+          "description": "Number of Cases",
+          "value_description": "6-7 cases"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "ru_poetry": {
+      "ud_treebank": "ru_poetry",
+      "ud_language_code": "ru",
+      "iso_639_3": "rus",
+      "wals_language_id": "rus",
+      "wals_language_name": "Russian",
+      "wals_features": {
+        "1A": {
+          "value": "4",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Moderately large"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "6",
+          "description": "Number of Cases",
+          "value_description": "6-7 cases"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "poetry"
+    },
+    "ru_pud": {
+      "ud_treebank": "ru_pud",
+      "ud_language_code": "ru",
+      "iso_639_3": "rus",
+      "wals_language_id": "rus",
+      "wals_language_name": "Russian",
+      "wals_features": {
+        "1A": {
+          "value": "4",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Moderately large"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "6",
+          "description": "Number of Cases",
+          "value_description": "6-7 cases"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "ru_taiga": {
+      "ud_treebank": "ru_taiga",
+      "ud_language_code": "ru",
+      "iso_639_3": "rus",
+      "wals_language_id": "rus",
+      "wals_language_name": "Russian",
+      "wals_features": {
+        "1A": {
+          "value": "4",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Moderately large"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "6",
+          "description": "Number of Cases",
+          "value_description": "6-7 cases"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "web, social"
+    },
+    "zh_gsd": {
+      "ud_treebank": "zh_gsd",
+      "ud_language_code": "zh",
+      "iso_639_3": "zho",
+      "wals_language_id": "",
+      "wals_language_name": "",
+      "wals_features": {},
+      "confidence": "low",
+      "match_method": "none",
+      "genre": "news, wikipedia"
+    },
+    "zh_gsdsimp": {
+      "ud_treebank": "zh_gsdsimp",
+      "ud_language_code": "zh",
+      "iso_639_3": "zho",
+      "wals_language_id": "",
+      "wals_language_name": "",
+      "wals_features": {},
+      "confidence": "low",
+      "match_method": "none",
+      "genre": "news, wikipedia"
+    },
+    "zh_pud": {
+      "ud_treebank": "zh_pud",
+      "ud_language_code": "zh",
+      "iso_639_3": "zho",
+      "wals_language_id": "",
+      "wals_language_name": "",
+      "wals_features": {},
+      "confidence": "low",
+      "match_method": "none",
+      "genre": "news, wikipedia"
+    },
+    "ja_gsd": {
+      "ud_treebank": "ja_gsd",
+      "ud_language_code": "ja",
+      "iso_639_3": "jpn",
+      "wals_language_id": "jpn",
+      "wals_language_name": "Japanese",
+      "wals_features": {
+        "1A": {
+          "value": "2",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Moderately small"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "7",
+          "description": "Number of Cases",
+          "value_description": "8-9 cases"
+        },
+        "51A": {
+          "value": "6",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Postpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "ja_pud": {
+      "ud_treebank": "ja_pud",
+      "ud_language_code": "ja",
+      "iso_639_3": "jpn",
+      "wals_language_id": "jpn",
+      "wals_language_name": "Japanese",
+      "wals_features": {
+        "1A": {
+          "value": "2",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Moderately small"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "49A": {
+          "value": "7",
+          "description": "Number of Cases",
+          "value_description": "8-9 cases"
+        },
+        "51A": {
+          "value": "6",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Postpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "ar_padt": {
+      "ud_treebank": "ar_padt",
+      "ud_language_code": "ar",
+      "iso_639_3": "ara",
+      "wals_language_id": "",
+      "wals_language_name": "",
+      "wals_features": {},
+      "confidence": "low",
+      "match_method": "none",
+      "genre": "news, fiction"
+    },
+    "ar_pud": {
+      "ud_treebank": "ar_pud",
+      "ud_language_code": "ar",
+      "iso_639_3": "ara",
+      "wals_language_id": "",
+      "wals_language_name": "",
+      "wals_features": {},
+      "confidence": "low",
+      "match_method": "none",
+      "genre": "news, wikipedia"
+    },
+    "cs_cac": {
+      "ud_treebank": "cs_cac",
+      "ud_language_code": "cs",
+      "iso_639_3": "ces",
+      "wals_language_id": "cze",
+      "wals_language_name": "Czech",
+      "wals_features": {
+        "26A": {
+          "value": "3",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Weakly suffixing"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "academic"
+    },
+    "cs_fictree": {
+      "ud_treebank": "cs_fictree",
+      "ud_language_code": "cs",
+      "iso_639_3": "ces",
+      "wals_language_id": "cze",
+      "wals_language_name": "Czech",
+      "wals_features": {
+        "26A": {
+          "value": "3",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Weakly suffixing"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "fiction"
+    },
+    "cs_pdt": {
+      "ud_treebank": "cs_pdt",
+      "ud_language_code": "cs",
+      "iso_639_3": "ces",
+      "wals_language_id": "cze",
+      "wals_language_name": "Czech",
+      "wals_features": {
+        "26A": {
+          "value": "3",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Weakly suffixing"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news"
+    },
+    "cs_pud": {
+      "ud_treebank": "cs_pud",
+      "ud_language_code": "cs",
+      "iso_639_3": "ces",
+      "wals_language_id": "cze",
+      "wals_language_name": "Czech",
+      "wals_features": {
+        "26A": {
+          "value": "3",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Weakly suffixing"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "it_isdt": {
+      "ud_treebank": "it_isdt",
+      "ud_language_code": "it",
+      "iso_639_3": "ita",
+      "wals_language_id": "ifi",
+      "wals_language_name": "Italian (Fiorentino)",
+      "wals_features": {},
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "it_pud": {
+      "ud_treebank": "it_pud",
+      "ud_language_code": "it",
+      "iso_639_3": "ita",
+      "wals_language_id": "ifi",
+      "wals_language_name": "Italian (Fiorentino)",
+      "wals_features": {},
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "pt_bosque": {
+      "ud_treebank": "pt_bosque",
+      "ud_language_code": "pt",
+      "iso_639_3": "por",
+      "wals_language_id": "por",
+      "wals_language_name": "Portuguese",
+      "wals_features": {
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, fiction"
+    },
+    "pt_gsd": {
+      "ud_treebank": "pt_gsd",
+      "ud_language_code": "pt",
+      "iso_639_3": "por",
+      "wals_language_id": "por",
+      "wals_language_name": "Portuguese",
+      "wals_features": {
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "pt_pud": {
+      "ud_treebank": "pt_pud",
+      "ud_language_code": "pt",
+      "iso_639_3": "por",
+      "wals_language_id": "por",
+      "wals_language_name": "Portuguese",
+      "wals_features": {
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "51A": {
+          "value": "9",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "No case affixes or adpositional clitics"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, wikipedia"
+    },
+    "hi_hdtb": {
+      "ud_treebank": "hi_hdtb",
+      "ud_language_code": "hi",
+      "iso_639_3": "hin",
+      "wals_language_id": "hin",
+      "wals_language_name": "Hindi",
+      "wals_features": {
+        "1A": {
+          "value": "5",
+          "description": "Order of Subject, Object and Verb",
+          "value_description": "Large"
+        },
+        "20A": {
+          "value": "1",
+          "description": "Fusion of Inflectional Morphology",
+          "value_description": "Exclusively concatenative"
+        },
+        "26A": {
+          "value": "2",
+          "description": "Exponence of Selected Inflectional Categories",
+          "value_description": "Strongly suffixing"
+        },
+        "51A": {
+          "value": "1",
+          "description": "Locus of Marking in the Clause",
+          "value_description": "Case suffixes"
+        }
+      },
+      "confidence": "high",
+      "match_method": "exact_iso_639_3",
+      "genre": "news, fiction"
+    }
+  }
+}

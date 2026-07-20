@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+import json
+
+# Research data structure
+research_data = {
+    "title": "Methodological review for dependency distance typology study",
+    "summary": "This methodological review provides comprehensive guidance for studying dependency distance (DD) minimization across Universal Dependencies (UD) treebanks. The research addresses three key methodological questions: (1) how to specify mixed-effects models for typological data with crossed random effects, (2) how to fit probability distributions to dependency distance data, and (3) what prior evidence exists for spoken vs written genre effects on syntactic structures. Key findings include: (1) Mixed-effects models should use lme4 formula syntax with crossed random effects for language family and treebank, implementable in Python via pymer4; (2) Dependency distances follow the Right Truncated Modified Zipf-Alekseev distribution with formula P_x = P_1 * x^{-(a + b*ln x)}, where parameters a and b indicate syntactic complexity; (3) Dobrovoljc (2026) found spoken language has fewer and less diverse syntactic structures than writing, suggesting modality effects on DD; (4) 12 spoken UD treebanks are available for comparison; (5) WALS data is accessible via CLDF format on GitHub for mapping typological features to UD treebanks.",
+    "answer": "This research synthesizes methodological best practices for studying dependency distance (DD) minimization across Universal Dependencies (UD) treebanks, with a focus on mixed-effects modeling, distribution fitting, and spoken vs written genre effects [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].\n\n## 1. MIXED-EFFECTS MODELS FOR TYPOLOGICAL DATA\n\n### Model Specification\nMixed-effects models are essential for typological data due to non-independence of observations from the same language family and treebank. Baayen et al. (2008) established the standard for crossed random effects with subjects and items [1]. For typological data with language family and treebank as grouping factors, the recommended lme4 formula in R is:\n\n```\nDD ~ fixed_effects + (1|language_family) + (1|treebank)\n```\n\nFor random slopes (allowing fixed effects to vary by group):\n```\nDD ~ fixed_effects + (1|language_family) + (1|treebank) + (fixed_effects|language_family)\n```\n\n### Python Implementation Options\nThree main Python tools exist for mixed-effects models:\n\n1. **statsmodels MixedLM**: Handles most non-crossed random effects models. For crossed effects, treat entire dataset as single group and use variance components [2]. Limitation: Less flexible than lme4 for complex random effects structures.\n\n2. **pymer4**: Python wrapper for R's lme4 package [3]. Advantages: Full lme4 functionality, familiar syntax. Disadvantages: Requires R installation, overhead from rpy2 interface.\n\n3. **rpy2**: Direct interface to R's lme4. Most flexible but requires careful setup and error handling.\n\n### Recommendations for Typological Data\n- **Random effects structure**: Include language family as random intercept to account for phylogenetic non-independence [4]. Treebank as additional random intercept accounts for annotation differences.\n- **Centering**: Center continuous predictors (e.g., WALS features) to reduce collinearity with random slopes.\n- **Model selection**: Start with maximal random effects structure, simplify if convergence fails using likelihood ratio tests.\n- **Multiple comparisons**: Use Bonferroni or False Discovery Rate (FDR) correction for multiple WALS features.\n\n## 2. DISTRIBUTION FITTING FOR DEPENDENCY DISTANCE\n\n### The Right Truncated Modified Zipf-Alekseev Distribution\nThe probability distribution of dependency distances follows the Right Truncated Modified Zipf-Alekseev (ZA) distribution [5, 6]. The exact formula from the Nature paper (Eq. 5) is [5]:\n\n$$P_x = P_1 \\cdot x^{-(a + b\\ln x)}, \\quad x = 1, 2, 3, \\ldots, n$$\n\nWhere:\n- $P_x$ = probability of dependency distance $x$\n- $P_1$ = normalization constant (probability of distance 1)\n- $a, b$ = shape parameters\n- $n$ = maximum observed dependency distance (truncation point)\n\nFor the first class adjustment (when frequency diverges at x=1) [5]:\n$$P_x = \\begin{cases} \\alpha, & x = 1 \\\\ \\frac{(1-\\alpha)x^{-(a + b\\ln x)}}{T}, & x = 2, 3, \\ldots, n \\end{cases}$$\n\nWhere $T = \\sum_{j=2}^n j^{-(a + b\\ln j)}$ and $\\alpha$ is the adjusted probability for distance 1.\n\n### Parameter Interpretation\n- **Parameter $a$**: Increases with syntactic complexity [5]. Higher $a$ indicates more long-distance dependencies.\n- **Parameter $b$**: Decreases with syntactic complexity [5]. Higher $b$ indicates sharper decay (more short dependencies).\n- **Parameter $\\alpha$**: Remains relatively stable around 0.4 across languages [5].\n- **Parameter $n$**: Maximum observed dependency distance in the corpus.\n\n### Fitting Methodology\n1. **Software**: Altmann-fitter v.3.1.0 (specialized tool) [7] or Python's scipy.optimize for MLE.\n2. **Method**: Maximum Likelihood Estimation (MLE) of parameters $a, b, \\alpha, n$.\n3. **Goodness-of-fit**: \n   - $R^2 > 0.98$ indicates excellent fit [7]\n   - Chi-square test: $X^2$ statistic with degrees of freedom = $n - 4$ (4 estimated parameters)\n   - Kolmogorov-Smirnov test for distribution comparison\n4. **Per-language vs pooled**: Fit separately for each language/treebank to capture cross-linguistic variation [7].\n\n### Python Implementation\n```python\nimport numpy as np\nfrom scipy.optimize import minimize\n\ndef za_distribution(x, a, b, n, alpha=0.4):\n    \"\"\"Right Truncated Modified Zipf-Alekseev distribution.\"\"\"\n    x = np.array(x)\n    if alpha is None:\n        P1 = 1.0 / np.sum(x**(-(a + b*np.log(x))))\n        return P1 * x**(-(a + b*np.log(x)))\n    else:\n        T = np.sum((x[1:])**(-(a + b*np.log(x[1:]))))\n        P = np.zeros_like(x, dtype=float)\n        P[0] = alpha\n        P[1:] = (1 - alpha) * (x[1:])**(-(a + b*np.log(x[1:]))) / T\n        return P\n\ndef negative_log_likelihood(params, distances):\n    \"\"\"Negative log-likelihood for MLE.\"\"\"\n    a, b, n = params\n    if a <= 0 or b <= 0 or n < max(distances):\n        return np.inf\n    x = np.arange(1, int(n)+1)\n    probs = za_distribution(x, a, b, n)\n    observed_counts = np.bincount(distances, minlength=int(n)+1)[1:]\n    return -np.sum(observed_counts * np.log(probs + 1e-10))\n\nresult = minimize(negative_log_likelihood, x0=[0.5, 0.5, max(distances)], \n                  args=(distances,), method='L-BFGS-B')\n```\n\n## 3. SPOKEN VS WRITTEN GENRE EFFECTS\n\n### Dobrovoljc (2026) Findings\nDobrovoljc's paper \"Counting trees: A treebank-driven exploration of syntactic variation in speech and writing across languages\" (2026) provides the most comprehensive comparison to date [8]. Key findings:\n\n1. **Syntactic inventory size**: Spoken corpora contain fewer and less diverse syntactic structures than written counterparts across both English and Slovenian.\n2. **Overlap**: Limited overlap between spoken and written syntactic inventories - most structures in speech do not occur in writing.\n3. **Modality-specific preferences**: Consistent cross-linguistic preferences for certain structural types across modalities.\n4. **Keyness analysis**: Speech-specific structures associated with interactivity, context-grounding, and economy of expression.\n\n### Spoken UD Treebanks\nDobrovoljc (2022) catalogs 12 spoken UD treebanks as of UD v2.9 [9]:\n- **French**: fr_rhapsodie, fr_parisstories\n- **Slovenian**: sl_sst (SST treebank)\n- **English**: en_eslspok (ESLSpok), en_childes (via CHILDES)\n- **Chinese**: zh_hk\n- **Cantonese**: yue_hk\n- **Norwegian**: no_nynorsklia\n- **Others**: bej_nsc, ckt_hse, kpv_ikdp, pcm_nsc, qtd_sagt, qfn_fame\n\n### Genre Effects on Dependency Distance\nWang & Liu (2017) found significant genre effects on dependency distance and direction [10]. However, their study did not specifically contrast speech vs writing. The current research should:\n1. Compare mean dependency distance (MDD) between spoken and written treebanks\n2. Fit ZA distribution separately for each modality\n3. Test whether parameters $a$ and $b$ differ significantly by modality\n\n### Psycholinguistic Predictions\n- **Speech**: Predicted to have SHORTER dependencies due to real-time production constraints and working memory limitations during speech planning.\n- **Writing**: Predicted to have LONGER dependencies due to planning time, complex syntax, and elaborated structure.\n\n## 4. WALS-TO-UD MAPPING\n\n### WALS Data Access\nThe World Atlas of Language Structures (WALS) is available as a CLDF dataset on GitHub [11]:\n- **Repository**: cldf-datasets/wals\n- **Format**: CSV files in CLDF (Cross-Linguistic Data Format)\n- **Installation**: `pip install pycldf` then download from GitHub\n- **Key files**: values.csv (feature values), languages.csv (language metadata), parameters.csv (feature definitions)\n\n### Relevant WALS Features for Dependency Distance\nBased on typological literature, these WALS features likely affect DD:\n1. **81A**: Order of Subject, Object, Verb (SOV, SVO, VSO, etc.)\n2. **82A**: Order of Subject and Verb\n3. **83A**: Order of Object and Verb\n4. **85A**: Order of Adjective and Noun\n5. **86A**: Order of Demonstrative and Noun\n6. **87A**: Order of Numeral and Noun\n7. **88A**: Order of Relative Clause and Noun\n\n### Mapping Methodology\n1. **Language identification**: Match UD treebank language to WALS language using glottocodes or ISO 639-3 codes.\n2. **Feature extraction**: Extract relevant WALS features for each language.\n3. **Merge datasets**: Combine DD measurements with WALS features by language.\n4. **Statistical analysis**: Use mixed-effects models with WALS features as fixed effects.\n\n## 5. METHODOLOGICAL RECOMMENDATIONS FOR MAIN EXPERIMENT\n\n1. **Mixed-Effects Model Specification**:\n   ```\n   DD ~ genre + WALS_feature1 + WALS_feature2 + (1|language_family) + (1|treebank)\n   ```\n   Use pymer4 for lme4 functionality in Python [3].\n\n2. **Distribution Fitting**:\n   - Fit ZA distribution per treebank using MLE\n   - Extract parameters $a, b, \\alpha, n$\n   - Compare parameters between spoken and written using t-tests or mixed-effects models\n\n3. **Spoken vs Written Comparison**:\n   - Use Dobrovoljc (2022) list of spoken treebanks [9]\n   - Match each spoken treebank with written counterpart in same language\n   - Control for treebank size and genre diversity\n\n4. **WALS Integration**:\n   - Download WALS data from cldf-datasets/wals GitHub [11]\n   - Map UD treebank languages to WALS languages\n   - Include 5-7 key word order features as predictors\n\n5. **Software Stack**:\n   - Python: pymer4, scipy.optimize, pandas, numpy\n   - Data: HuggingFace UD dataset (universal-dependencies/universal_dependencies)\n   - WALS: pycldf to load CLDF data\n   - Visualization: matplotlib, seaborn\n\n## CONFIDENCE ASSESSMENT\n\n**High confidence** (90%+):\n- ZA distribution formula and parameter interpretation [5]\n- lme4 syntax for mixed-effects models [12]\n- List of spoken UD treebanks [9]\n- Dobrovoljc (2026) findings on syntactic structure diversity [8]\n\n**Medium confidence** (70-90%):\n- Python implementation options (pymer4 vs statsmodels) [2, 3]\n- WALS features most relevant to DD [11]\n- Genre effects on dependency distance (limited prior work) [10]\n\n**Low confidence** (<70%):\n- Exact random effects structure for typological data (should test multiple specifications)\n- Optimal distribution fitting method (MLE vs method of moments)\n- Psycholinguistic predictions for speech vs writing DD\n\n## FOLLOW-UP QUESTIONS\n\n1. Should we include random slopes for genre effects by language family, or is random intercept sufficient?\n2. How should we handle treebanks with both spoken and written data (e.g., en_gum)?\n3. What is the minimum treebank size for reliable ZA distribution fitting (suggested: >10,000 tokens)?",
+    "sources": [
+        {
+            "index": 1,
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S0749596X07001398",
+            "title": "Mixed-effects modeling with crossed random effects for subjects and items",
+            "summary": "Foundational paper by Baayen et al. (2008) establishing mixed-effects models with crossed random effects for psycholinguistic data."
+        },
+        {
+            "index": 2,
+            "url": "https://www.statsmodels.org/stable/mixed_linear.html",
+            "title": "Linear Mixed Effects Models - statsmodels documentation",
+            "summary": "Official documentation for statsmodels MixedLM, including crossed random effects implementation details."
+        },
+        {
+            "index": 3,
+            "url": "https://eshinjolly.com/pymer4/",
+            "title": "Pymer4: Generalized Linear & Multi-level Models in Python",
+            "summary": "Python package providing lme4 functionality via rpy2 interface."
+        },
+        {
+            "index": 4,
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S0749596X08000932",
+            "title": "Categorical data analysis: Away from ANOVAs towards logit mixed models",
+            "summary": "Jaeger (2008) on mixed-effects models in psycholinguistics, relevant for random effects structure."
+        },
+        {
+            "index": 5,
+            "url": "https://www.nature.com/articles/s41599-023-02427-x",
+            "title": "Probability distribution of dependency distance and dependency type in translational language",
+            "summary": "Nature paper providing exact ZA distribution formula (Eq. 5) and parameter interpretation."
+        },
+        {
+            "index": 6,
+            "url": "https://aclanthology.org/2022.paclic-1.44.pdf",
+            "title": "Curve-fitting of frequency distributions of dependency distances in a multi-lingual parallel corpus",
+            "summary": "PACLIC paper showing ZA distribution fitting results for 20 languages with parameters a, b, n, α."
+        },
+        {
+            "index": 7,
+            "url": "https://aclanthology.org/2022.paclic-1.44.pdf",
+            "title": "Curve-fitting of frequency distributions (same paper as 6)",
+            "summary": "Details on Altmann-fitter software and R² > 0.98 as goodness-of-fit criterion."
+        },
+        {
+            "index": 8,
+            "url": "https://arxiv.org/abs/2505.22774",
+            "title": "Counting trees: A treebank-driven exploration of syntactic variation in speech and writing across languages",
+            "summary": "Dobrovoljc (2026) paper showing spoken language has fewer, less diverse syntactic structures than writing."
+        },
+        {
+            "index": 9,
+            "url": "https://aclanthology.org/anthology-files/pdf/lrec/2022.lrec-1.191.pdf",
+            "title": "Spoken Language Treebanks in Universal Dependencies: an Overview",
+            "summary": "Dobrovoljc (2022) cataloging 12 spoken UD treebanks with statistics and transcription characteristics."
+        },
+        {
+            "index": 10,
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S0024375417302035",
+            "title": "The effects of genre on dependency distance and dependency direction",
+            "summary": "Wang & Liu (2017) demonstrating genre effects on dependency distance, though not specifically speech vs writing."
+        },
+        {
+            "index": 11,
+            "url": "https://github.com/cldf-datasets/wals",
+            "title": "cldf-datasets/wals: The World Atlas of Language Structures",
+            "summary": "GitHub repository with WALS data in CLDF format (CSV) for programmatic access."
+        },
+        {
+            "index": 12,
+            "url": "https://cran.r-project.org/package=lme4/vignettes/lmer.pdf",
+            "title": "Fitting Linear Mixed-Effects Models Using lme4",
+            "summary": "Bates et al. (2015) lme4 vignette with detailed formula syntax for crossed random effects."
+        },
+        {
+            "index": 13,
+            "url": "https://www.ram-verlag.eu/shop/unified-modeling-of-length-in-language/",
+            "title": "Unified modeling of length in language",
+            "summary": "Popescu et al. (2014) book describing ZA distribution theoretical foundations."
+        }
+    ],
+    "follow_up_questions": [
+        "Should we include random slopes for genre effects by language family, or is random intercept sufficient for the mixed-effects model?",
+        "How should we handle treebanks with both spoken and written data (e.g., en_gum, fr_ftb) in the spoken vs written comparison?",
+        "What is the minimum treebank size (sentences/tokens) required for reliable ZA distribution fitting, and how should we handle small spoken treebanks?"
+    ]
+}
+
+# Write to file
+output_path = '/ai-inventor/aii_data/runs/run_txhWJXyNIa5t/3_invention_loop/iter_1/gen_art/gen_art_research_1/research_out.json'
+with open(output_path, 'w', encoding='utf-8') as f:
+    json.dump(research_data, f, indent=2, ensure_ascii=False)
+
+print(f"Successfully wrote research_out.json with {len(research_data['sources'])} sources")
+print(f"Keys: {list(research_data.keys())}")

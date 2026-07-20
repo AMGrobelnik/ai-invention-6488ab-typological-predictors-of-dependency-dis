@@ -1,0 +1,1361 @@
+{
+  "datasets": [
+    {
+      "dataset": "za_distribution_fitting",
+      "examples": [
+        {
+          "input": "{\"treebank_name\": \"ko_gsd\", \"family\": \"Koreanic\"}",
+          "output": "{\"a_param\": 1.4209217992066445, \"b_param\": 0.10889506439152592, \"converged\": true, \"ks_stat\": 0.016971777860673276, \"ks_p\": 0.5287880904344916, \"n_deps\": 2466}",
+          "metadata_treebank": "ko_gsd",
+          "metadata_family": "Koreanic",
+          "predict_a_param": "1.4209217992066445",
+          "predict_b_param": "0.10889506439152592"
+        },
+        {
+          "input": "{\"treebank_name\": \"en_atis\", \"family\": \"Indo-European\"}",
+          "output": "{\"a_param\": 0.7793042296811129, \"b_param\": 0.5282061062455036, \"converged\": true, \"ks_stat\": 0.013855021701585146, \"ks_p\": 0.3006698651671915, \"n_deps\": 2581}",
+          "metadata_treebank": "en_atis",
+          "metadata_family": "Indo-European",
+          "predict_a_param": "0.7793042296811129",
+          "predict_b_param": "0.5282061062455036"
+        },
+        {
+          "input": "{\"treebank_name\": \"en_childes\", \"family\": \"Indo-European\"}",
+          "output": "{\"a_param\": -0.22506440233891886, \"b_param\": 1.0562153139896877, \"converged\": true, \"ks_stat\": 0.01668983483209574, \"ks_p\": 0.121266708307191, \"n_deps\": 1225}",
+          "metadata_treebank": "en_childes",
+          "metadata_family": "Indo-European",
+          "predict_a_param": "-0.22506440233891886",
+          "predict_b_param": "1.0562153139896877"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "num_treebanks": 41,
+    "num_treebanks_fitted": 41,
+    "num_treebanks_converged": 41,
+    "wals_features_used": [
+      "wals_1A_value",
+      "wals_20A_value",
+      "wals_26A_value",
+      "wals_49A_value",
+      "wals_51A_value"
+    ],
+    "mixed_effects_results": {
+      "a_param_models": {
+        "wals_1A_value": {
+          "converged": true,
+          "predictor_coef": 0.12301188069257235,
+          "predictor_se": 0.07405724283340395,
+          "predictor_p": 0.09670585257213501,
+          "predictor_ci_lower": -0.02213764805523641,
+          "predictor_ci_upper": 0.26816140944038114,
+          "intercept": 0.4986202314029726,
+          "sentence_length_coef": 0.013367037360592698,
+          "sentence_length_p": 2.50488534217951e-06,
+          "log_likelihood": -6.247749993715807,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.10687967313514753,
+          "residual_variance": 0.03724338457387979
+        },
+        "wals_20A_value": {
+          "converged": true,
+          "predictor_coef": -0.004846958784761834,
+          "predictor_se": 0.06664225116933989,
+          "predictor_p": 0.9420201649273469,
+          "predictor_ci_lower": -0.1354633709253403,
+          "predictor_ci_upper": 0.12576945335581666,
+          "intercept": 0.8831045163870042,
+          "sentence_length_coef": 0.012738611988671572,
+          "sentence_length_p": 1.1792645316608194e-05,
+          "log_likelihood": -7.730175389288327,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.11861150801955132,
+          "residual_variance": 0.03966713706345944
+        },
+        "wals_26A_value": {
+          "converged": true,
+          "predictor_coef": 0.031540080494837856,
+          "predictor_se": 0.20856645688085568,
+          "predictor_p": 0.8797996744805611,
+          "predictor_ci_lower": -0.3772426633747654,
+          "predictor_ci_upper": 0.44032282436444115,
+          "intercept": 0.8163441533064699,
+          "sentence_length_coef": 0.01272612316399001,
+          "sentence_length_p": 1.1894437903620004e-05,
+          "log_likelihood": -6.578274353334962,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.11807835751989762,
+          "residual_variance": 0.03968163832418587
+        },
+        "wals_49A_value": {
+          "converged": true,
+          "predictor_coef": 0.029962567449836344,
+          "predictor_se": 0.018808367900065133,
+          "predictor_p": 0.11115020358123553,
+          "predictor_ci_lower": -0.006901156242270563,
+          "predictor_ci_upper": 0.06682629114194324,
+          "intercept": 0.7265774790019551,
+          "sentence_length_coef": 0.01377915228499162,
+          "sentence_length_p": 2.2341886021224857e-06,
+          "log_likelihood": -7.719421623762571,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.10420340941679086,
+          "residual_variance": 0.03769519822495435
+        },
+        "wals_51A_value": {
+          "converged": true,
+          "predictor_coef": -0.02431709405061701,
+          "predictor_se": 0.011449299691273774,
+          "predictor_p": 0.033679043791362356,
+          "predictor_ci_lower": -0.04675730909371917,
+          "predictor_ci_upper": -0.0018768790075148548,
+          "intercept": 0.987742035759024,
+          "sentence_length_coef": 0.01322003068787911,
+          "sentence_length_p": 1.8517878579068893e-06,
+          "log_likelihood": -7.288385627195453,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.09834199506904744,
+          "residual_variance": 0.03602848892131559
+        }
+      },
+      "b_param_models": {
+        "wals_1A_value": {
+          "converged": true,
+          "predictor_coef": -0.0661563056851869,
+          "predictor_se": 0.0400246647875686,
+          "predictor_p": 0.09835357053310084,
+          "predictor_ci_lower": -0.14460320716210986,
+          "predictor_ci_upper": 0.012290595791736053,
+          "intercept": 0.6128530795955748,
+          "sentence_length_coef": -0.008363819271858119,
+          "sentence_length_p": 1.3065958576019636e-07,
+          "log_likelihood": 18.180518894923843,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.01681892937215452,
+          "residual_variance": 0.01157316678915181
+        },
+        "wals_20A_value": {
+          "converged": true,
+          "predictor_coef": 0.011274643023146857,
+          "predictor_se": 0.02891171181947914,
+          "predictor_p": 0.6965601946000074,
+          "predictor_ci_lower": -0.04539127087443326,
+          "predictor_ci_upper": 0.06794055692072697,
+          "intercept": 0.3891017913557548,
+          "sentence_length_coef": -0.008009353997323727,
+          "sentence_length_p": 8.332651466827183e-07,
+          "log_likelihood": 16.571911613418855,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.017804654542084332,
+          "residual_variance": 0.012381739636849472
+        },
+        "wals_26A_value": {
+          "converged": true,
+          "predictor_coef": -0.020780904329596,
+          "predictor_se": 0.09094436369305336,
+          "predictor_p": 0.8192565541636174,
+          "predictor_ci_lower": -0.19902858176489271,
+          "predictor_ci_upper": 0.1574667731057007,
+          "intercept": 0.44833415550017663,
+          "sentence_length_coef": -0.007973700830851478,
+          "sentence_length_p": 9.73846067694504e-07,
+          "log_likelihood": 17.670736139014274,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.01772105629675476,
+          "residual_variance": 0.01242962444759803
+        },
+        "wals_49A_value": {
+          "converged": true,
+          "predictor_coef": -0.0173912358286773,
+          "predictor_se": 0.00975861484116436,
+          "predictor_p": 0.07472610395984101,
+          "predictor_ci_lower": -0.0365177694563575,
+          "predictor_ci_upper": 0.0017352977990029057,
+          "intercept": 0.4971159468072534,
+          "sentence_length_coef": -0.008574495051408858,
+          "sentence_length_p": 1.233454312504379e-07,
+          "log_likelihood": 16.988632261653507,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.014401729202839244,
+          "residual_variance": 0.011742926792714815
+        },
+        "wals_51A_value": {
+          "converged": true,
+          "predictor_coef": 0.014424527007391526,
+          "predictor_se": 0.006095575114228052,
+          "predictor_p": 0.017962359880266003,
+          "predictor_ci_lower": 0.0024774193184459187,
+          "predictor_ci_upper": 0.026371634696337132,
+          "intercept": 0.34503446201584315,
+          "sentence_length_coef": -0.00827988898654673,
+          "sentence_length_p": 8.065140671474242e-08,
+          "log_likelihood": 17.638094044127065,
+          "aic": NaN,
+          "bic": NaN,
+          "random_effects_variance": 0.012664911013526504,
+          "residual_variance": 0.011218173438111895
+        }
+      }
+    },
+    "spoken_written_comparison": {
+      "t_test": {
+        "statistic": -1.031171144874247,
+        "p": 0.48781877022927095,
+        "cohens_d": -0.8555584756058294,
+        "spoken_mean": 2.8272569564071905,
+        "written_mean": 3.404240038942102,
+        "spoken_n": 2,
+        "written_n": 104
+      },
+      "regression": {
+        "genre_spoken_coef": -0.24012794941878007,
+        "genre_spoken_p": 0.3223415934053301,
+        "sentence_length_coef": 0.04058726135696947,
+        "sentence_length_p": 3.526913191111158e-23,
+        "r_squared": 0.6247958241035473,
+        "adj_r_squared": 0.6175103061249754
+      },
+      "treebank_stats": [
+        {
+          "treebank_name": "af_afribooms",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5305033634887497,
+          "n_deps": 4311,
+          "mean_sentence_length": 27.27000695894224
+        },
+        {
+          "treebank_name": "am_att",
+          "genre_category": "written",
+          "family": "Afro-Asiatic",
+          "mean_dd": 2.50210970464135,
+          "n_deps": 1659,
+          "mean_sentence_length": 9.726943942133815
+        },
+        {
+          "treebank_name": "ar_padt",
+          "genre_category": "written",
+          "family": "Afro-Asiatic",
+          "mean_dd": 4.717907852796291,
+          "n_deps": 6902,
+          "mean_sentence_length": 50.99391480730223
+        },
+        {
+          "treebank_name": "ar_pud",
+          "genre_category": "written",
+          "family": "Afro-Asiatic",
+          "mean_dd": 3.2940096396603167,
+          "n_deps": 4357,
+          "mean_sentence_length": 25.499426210695432
+        },
+        {
+          "treebank_name": "az_tuecl",
+          "genre_category": "written",
+          "family": "Turkic",
+          "mean_dd": 2.3366228070175437,
+          "n_deps": 912,
+          "mean_sentence_length": 7.657894736842105
+        },
+        {
+          "treebank_name": "be_hse",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 3.5736219481500124,
+          "n_deps": 3973,
+          "mean_sentence_length": 27.447017367228796
+        },
+        {
+          "treebank_name": "bg_btb",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.5311589982527662,
+          "n_deps": 1717,
+          "mean_sentence_length": 9.949330227140361
+        },
+        {
+          "treebank_name": "bn_bru",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.15625,
+          "n_deps": 320,
+          "mean_sentence_length": 6.4125
+        },
+        {
+          "treebank_name": "ca_ancora",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.850601779173208,
+          "n_deps": 7644,
+          "mean_sentence_length": 47.26190476190476
+        },
+        {
+          "treebank_name": "cop_scriptorium",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 3.499888715780102,
+          "n_deps": 4493,
+          "mean_sentence_length": 30.767193411974183
+        },
+        {
+          "treebank_name": "cs_cac",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5952489721333944,
+          "n_deps": 4378,
+          "mean_sentence_length": 28.438556418455917
+        },
+        {
+          "treebank_name": "cs_fictree",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4994400895856663,
+          "n_deps": 2679,
+          "mean_sentence_length": 21.22247107129526
+        },
+        {
+          "treebank_name": "cs_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.656573498964803,
+          "n_deps": 3864,
+          "mean_sentence_length": 23.0703933747412
+        },
+        {
+          "treebank_name": "da_ddt",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.538112779824313,
+          "n_deps": 3529,
+          "mean_sentence_length": 22.933692264097477
+        },
+        {
+          "treebank_name": "de_gsd",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4823269513991164,
+          "n_deps": 2716,
+          "mean_sentence_length": 17.298969072164947
+        },
+        {
+          "treebank_name": "de_hdt",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 4.299279807948786,
+          "n_deps": 3749,
+          "mean_sentence_length": 24.164577220592157
+        },
+        {
+          "treebank_name": "de_lit",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 4.041950707918196,
+          "n_deps": 3814,
+          "mean_sentence_length": 25.851074986890403
+        },
+        {
+          "treebank_name": "de_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 4.242073594075445,
+          "n_deps": 4321,
+          "mean_sentence_length": 25.050914140245315
+        },
+        {
+          "treebank_name": "el_gdt",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.562660351292678,
+          "n_deps": 5067,
+          "mean_sentence_length": 34.28833629366489
+        },
+        {
+          "treebank_name": "en_atis",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.3076327005036807,
+          "n_deps": 2581,
+          "mean_sentence_length": 15.795815575358388
+        },
+        {
+          "treebank_name": "en_childes",
+          "genre_category": "spoken",
+          "family": "Indo-European",
+          "mean_dd": 2.270204081632653,
+          "n_deps": 1225,
+          "mean_sentence_length": 7.331428571428572
+        },
+        {
+          "treebank_name": "en_ewt",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.8418273645546375,
+          "n_deps": 4356,
+          "mean_sentence_length": 32.926078971533514
+        },
+        {
+          "treebank_name": "en_gentle",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.3992042440318304,
+          "n_deps": 2262,
+          "mean_sentence_length": 29.74447391688771
+        },
+        {
+          "treebank_name": "en_gum",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.7187799731440627,
+          "n_deps": 5213,
+          "mean_sentence_length": 36.756761941300596
+        },
+        {
+          "treebank_name": "en_gumreddit",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.6371822033898304,
+          "n_deps": 3776,
+          "mean_sentence_length": 28.1551906779661
+        },
+        {
+          "treebank_name": "en_lines",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.424171311234966,
+          "n_deps": 3409,
+          "mean_sentence_length": 23.67996479906131
+        },
+        {
+          "treebank_name": "en_littleprince",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4012056262558605,
+          "n_deps": 2986,
+          "mean_sentence_length": 21.676490288010715
+        },
+        {
+          "treebank_name": "en_partut",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.750337642292109,
+          "n_deps": 5183,
+          "mean_sentence_length": 36.240594250434114
+        },
+        {
+          "treebank_name": "en_pronouns",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.088235294117647,
+          "n_deps": 1190,
+          "mean_sentence_length": 6.38655462184874
+        },
+        {
+          "treebank_name": "en_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.6778711484593836,
+          "n_deps": 4284,
+          "mean_sentence_length": 24.76330532212885
+        },
+        {
+          "treebank_name": "es_ancora",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.876480341070583,
+          "n_deps": 8444,
+          "mean_sentence_length": 46.14282330648982
+        },
+        {
+          "treebank_name": "es_coser",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.1685033771773905,
+          "n_deps": 2813,
+          "mean_sentence_length": 30.985780305723427
+        },
+        {
+          "treebank_name": "es_gsd",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5660540915395282,
+          "n_deps": 5768,
+          "mean_sentence_length": 38.0124826629681
+        },
+        {
+          "treebank_name": "es_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4601639688879544,
+          "n_deps": 4757,
+          "mean_sentence_length": 27.97246163548455
+        },
+        {
+          "treebank_name": "et_edt",
+          "genre_category": "written",
+          "family": "Uralic",
+          "mean_dd": 3.2745886654478977,
+          "n_deps": 2735,
+          "mean_sentence_length": 16.46983546617916
+        },
+        {
+          "treebank_name": "et_ewt",
+          "genre_category": "written",
+          "family": "Uralic",
+          "mean_dd": 3.238075825519772,
+          "n_deps": 2453,
+          "mean_sentence_length": 17.03261312678353
+        },
+        {
+          "treebank_name": "eu_bdt",
+          "genre_category": "written",
+          "family": "Language_Isolate",
+          "mean_dd": 3.0885206143896524,
+          "n_deps": 2474,
+          "mean_sentence_length": 14.936135812449475
+        },
+        {
+          "treebank_name": "fa_seraji",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.64890048453224,
+          "n_deps": 2683,
+          "mean_sentence_length": 19.712635109951545
+        },
+        {
+          "treebank_name": "fi_ftb",
+          "genre_category": "written",
+          "family": "Uralic",
+          "mean_dd": 1.8706697459584296,
+          "n_deps": 866,
+          "mean_sentence_length": 6.3672055427251735
+        },
+        {
+          "treebank_name": "fi_pud",
+          "genre_category": "written",
+          "family": "Uralic",
+          "mean_dd": 3.303454437164979,
+          "n_deps": 3358,
+          "mean_sentence_length": 19.616438356164384
+        },
+        {
+          "treebank_name": "fr_alts",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 5.255340664896979,
+          "n_deps": 7911,
+          "mean_sentence_length": 73.93388952092023
+        },
+        {
+          "treebank_name": "fr_fqb",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.702375809935205,
+          "n_deps": 2315,
+          "mean_sentence_length": 12.733909287257019
+        },
+        {
+          "treebank_name": "fr_gsd",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5378020265003896,
+          "n_deps": 5132,
+          "mean_sentence_length": 33.81722525331255
+        },
+        {
+          "treebank_name": "fr_parisstories",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5556618819776715,
+          "n_deps": 3135,
+          "mean_sentence_length": 22.77224880382775
+        },
+        {
+          "treebank_name": "fr_partut",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.776425475158386,
+          "n_deps": 5998,
+          "mean_sentence_length": 42.86762254084695
+        },
+        {
+          "treebank_name": "fr_poitevindivital",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.6112612612612613,
+          "n_deps": 4440,
+          "mean_sentence_length": 35.11801801801802
+        },
+        {
+          "treebank_name": "fr_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5319919517102614,
+          "n_deps": 4970,
+          "mean_sentence_length": 29.06317907444668
+        },
+        {
+          "treebank_name": "fr_rhapsodie",
+          "genre_category": "spoken",
+          "family": "Indo-European",
+          "mean_dd": 3.384309831181728,
+          "n_deps": 3021,
+          "mean_sentence_length": 25.609069844422375
+        },
+        {
+          "treebank_name": "fr_sequoia",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4334705075445817,
+          "n_deps": 4374,
+          "mean_sentence_length": 32.276634659350705
+        },
+        {
+          "treebank_name": "gl_treegal",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 3.3027765535478184,
+          "n_deps": 4538,
+          "mean_sentence_length": 35.72410753635963
+        },
+        {
+          "treebank_name": "got_proiel",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 2.4367541766109784,
+          "n_deps": 1676,
+          "mean_sentence_length": 11.399761336515514
+        },
+        {
+          "treebank_name": "grc_perseus",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 3.8770517187983895,
+          "n_deps": 3229,
+          "mean_sentence_length": 20.454320222979252
+        },
+        {
+          "treebank_name": "he_htb",
+          "genre_category": "written",
+          "family": "Afro-Asiatic",
+          "mean_dd": 3.770500825536599,
+          "n_deps": 5451,
+          "mean_sentence_length": 35.41166758392956
+        },
+        {
+          "treebank_name": "hi_hdtb",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5790638836179633,
+          "n_deps": 3162,
+          "mean_sentence_length": 18.659076533839343
+        },
+        {
+          "treebank_name": "hr_set",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5456329735034346,
+          "n_deps": 4076,
+          "mean_sentence_length": 25.917075564278704
+        },
+        {
+          "treebank_name": "hu_szeged",
+          "genre_category": "written",
+          "family": "Uralic",
+          "mean_dd": 3.4663677130044843,
+          "n_deps": 3122,
+          "mean_sentence_length": 18.92632927610506
+        },
+        {
+          "treebank_name": "hy_armtdp",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.330947511929107,
+          "n_deps": 2934,
+          "mean_sentence_length": 21.173142467620995
+        },
+        {
+          "treebank_name": "id_gsd",
+          "genre_category": "written",
+          "family": "Austronesian",
+          "mean_dd": 3.2068649885583524,
+          "n_deps": 4370,
+          "mean_sentence_length": 29.378947368421052
+        },
+        {
+          "treebank_name": "it_isdt",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.444895748713783,
+          "n_deps": 3693,
+          "mean_sentence_length": 26.979962090441376
+        },
+        {
+          "treebank_name": "it_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5998439937597504,
+          "n_deps": 5128,
+          "mean_sentence_length": 30.241809672386896
+        },
+        {
+          "treebank_name": "ja_gsd",
+          "genre_category": "written",
+          "family": "Japonic",
+          "mean_dd": 3.540529189416212,
+          "n_deps": 4762,
+          "mean_sentence_length": 32.11423771524569
+        },
+        {
+          "treebank_name": "ja_pud",
+          "genre_category": "written",
+          "family": "Japonic",
+          "mean_dd": 3.8803691275167784,
+          "n_deps": 5960,
+          "mean_sentence_length": 34.31342281879195
+        },
+        {
+          "treebank_name": "ka_glc",
+          "genre_category": "written",
+          "family": "Kartvelian",
+          "mean_dd": 3.549047282992237,
+          "n_deps": 4251,
+          "mean_sentence_length": 26.792519407198306
+        },
+        {
+          "treebank_name": "kk_ktb",
+          "genre_category": "written",
+          "family": "Turkic",
+          "mean_dd": 3.4877126654064274,
+          "n_deps": 529,
+          "mean_sentence_length": 20.765595463137995
+        },
+        {
+          "treebank_name": "ko_gsd",
+          "genre_category": "written",
+          "family": "Koreanic",
+          "mean_dd": 3.4160583941605838,
+          "n_deps": 2466,
+          "mean_sentence_length": 16.846715328467152
+        },
+        {
+          "treebank_name": "la_ittb",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.67212020033389,
+          "n_deps": 2995,
+          "mean_sentence_length": 22.023706176961603
+        },
+        {
+          "treebank_name": "la_perseus",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.0237864077669903,
+          "n_deps": 2060,
+          "mean_sentence_length": 13.100970873786407
+        },
+        {
+          "treebank_name": "lt_alksnis",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 3.69994994994995,
+          "n_deps": 3996,
+          "mean_sentence_length": 25.625625625625627
+        },
+        {
+          "treebank_name": "lv_lvtb",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 3.4253986332574033,
+          "n_deps": 3512,
+          "mean_sentence_length": 22.25
+        },
+        {
+          "treebank_name": "mt_mudt",
+          "genre_category": "written",
+          "family": "Afro-Asiatic",
+          "mean_dd": 3.371487793643482,
+          "n_deps": 4342,
+          "mean_sentence_length": 30.784891754951634
+        },
+        {
+          "treebank_name": "nl_alpino",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.8906882591093117,
+          "n_deps": 3705,
+          "mean_sentence_length": 22.702024291497974
+        },
+        {
+          "treebank_name": "nl_lassysmall",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.849155503785673,
+          "n_deps": 1717,
+          "mean_sentence_length": 16.297612114152592
+        },
+        {
+          "treebank_name": "no_bokmaal",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.462803009194762,
+          "n_deps": 3589,
+          "mean_sentence_length": 24.568682084146
+        },
+        {
+          "treebank_name": "no_nynorsk",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.593029490616622,
+          "n_deps": 3730,
+          "mean_sentence_length": 28.043967828418232
+        },
+        {
+          "treebank_name": "pl_lfg",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.634745242480049,
+          "n_deps": 1629,
+          "mean_sentence_length": 9.182934315531
+        },
+        {
+          "treebank_name": "pl_pdb",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 2.896713615023474,
+          "n_deps": 2556,
+          "mean_sentence_length": 14.339593114241001
+        },
+        {
+          "treebank_name": "pl_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.3863515666489645,
+          "n_deps": 3766,
+          "mean_sentence_length": 22.18799787573022
+        },
+        {
+          "treebank_name": "pt_bosque",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.295627859684799,
+          "n_deps": 3934,
+          "mean_sentence_length": 26.236908998474835
+        },
+        {
+          "treebank_name": "pt_gsd",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5754898194391087,
+          "n_deps": 5206,
+          "mean_sentence_length": 34.05186323472916
+        },
+        {
+          "treebank_name": "pt_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.509989701338826,
+          "n_deps": 4855,
+          "mean_sentence_length": 28.525437693099896
+        },
+        {
+          "treebank_name": "ro_rrt",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.6736703873933028,
+          "n_deps": 4569,
+          "mean_sentence_length": 34.80827314510834
+        },
+        {
+          "treebank_name": "ru_gsd",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.315100758963622,
+          "n_deps": 3821,
+          "mean_sentence_length": 26.281339963360377
+        },
+        {
+          "treebank_name": "ru_poetry",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.414265129682997,
+          "n_deps": 2776,
+          "mean_sentence_length": 19.969740634005763
+        },
+        {
+          "treebank_name": "ru_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4379194630872485,
+          "n_deps": 4172,
+          "mean_sentence_length": 24.813518696069032
+        },
+        {
+          "treebank_name": "ru_syntagrus",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.0754877014419,
+          "n_deps": 2358,
+          "mean_sentence_length": 17.257845631891435
+        },
+        {
+          "treebank_name": "ru_taiga",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4674242424242423,
+          "n_deps": 2640,
+          "mean_sentence_length": 35.095454545454544
+        },
+        {
+          "treebank_name": "sa_ufal",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 2.9920098340503993,
+          "n_deps": 1627,
+          "mean_sentence_length": 11.298709280885065
+        },
+        {
+          "treebank_name": "sl_ssj",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5847010550996483,
+          "n_deps": 3412,
+          "mean_sentence_length": 24.1031652989449
+        },
+        {
+          "treebank_name": "sr_set",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.5183850036049025,
+          "n_deps": 4161,
+          "mean_sentence_length": 26.62028358567652
+        },
+        {
+          "treebank_name": "sv_pud",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.4166041510377596,
+          "n_deps": 3999,
+          "mean_sentence_length": 23.245561390347586
+        },
+        {
+          "treebank_name": "sv_talbanken",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.0347859327217126,
+          "n_deps": 2616,
+          "mean_sentence_length": 18.492354740061163
+        },
+        {
+          "treebank_name": "swl_sslc",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 2.547169811320755,
+          "n_deps": 1590,
+          "mean_sentence_length": 10.743396226415094
+        },
+        {
+          "treebank_name": "ta_ttb",
+          "genre_category": "written",
+          "family": "Dravidian",
+          "mean_dd": 3.337382326146371,
+          "n_deps": 3293,
+          "mean_sentence_length": 19.733677497722443
+        },
+        {
+          "treebank_name": "te_mtg",
+          "genre_category": "written",
+          "family": "Dravidian",
+          "mean_dd": 1.9833852544132917,
+          "n_deps": 963,
+          "mean_sentence_length": 5.361370716510903
+        },
+        {
+          "treebank_name": "th_pud",
+          "genre_category": "written",
+          "family": "Tai-Kadai",
+          "mean_dd": 2.8482892188508715,
+          "n_deps": 4647,
+          "mean_sentence_length": 27.438992898644287
+        },
+        {
+          "treebank_name": "tr_imst",
+          "genre_category": "written",
+          "family": "Turkic",
+          "mean_dd": 3.253046303818034,
+          "n_deps": 2462,
+          "mean_sentence_length": 16.744110479285133
+        },
+        {
+          "treebank_name": "tr_pud",
+          "genre_category": "written",
+          "family": "Turkic",
+          "mean_dd": 3.655443322109989,
+          "n_deps": 3564,
+          "mean_sentence_length": 20.918630751964084
+        },
+        {
+          "treebank_name": "uk_iu",
+          "genre_category": "written",
+          "family": "Indo-European",
+          "mean_dd": 3.707047905693504,
+          "n_deps": 3987,
+          "mean_sentence_length": 32.3523952846752
+        },
+        {
+          "treebank_name": "ur_udtb",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 3.8423672566371683,
+          "n_deps": 5424,
+          "mean_sentence_length": 33.72087020648968
+        },
+        {
+          "treebank_name": "uz_ut",
+          "genre_category": "written",
+          "family": "Turkic",
+          "mean_dd": 3.2674865488086087,
+          "n_deps": 2602,
+          "mean_sentence_length": 14.254419677171407
+        },
+        {
+          "treebank_name": "vi_vtb",
+          "genre_category": "written",
+          "family": "Austroasiatic",
+          "mean_dd": 2.9675736116287736,
+          "n_deps": 2683,
+          "mean_sentence_length": 15.835631755497577
+        },
+        {
+          "treebank_name": "yo_ytb",
+          "genre_category": "written",
+          "family": "Niger-Congo",
+          "mean_dd": 3.505798394290812,
+          "n_deps": 5605,
+          "mean_sentence_length": 32.300267618198035
+        },
+        {
+          "treebank_name": "yue_hk",
+          "genre_category": "written",
+          "family": "Unknown",
+          "mean_dd": 2.5142857142857142,
+          "n_deps": 1435,
+          "mean_sentence_length": 9.668989547038327
+        },
+        {
+          "treebank_name": "zh_gsd",
+          "genre_category": "written",
+          "family": "Sino-Tibetan",
+          "mean_dd": 4.348716928585637,
+          "n_deps": 5027,
+          "mean_sentence_length": 31.80167097672568
+        },
+        {
+          "treebank_name": "zh_gsdsimp",
+          "genre_category": "written",
+          "family": "Sino-Tibetan",
+          "mean_dd": 4.3473244479809035,
+          "n_deps": 5027,
+          "mean_sentence_length": 31.80167097672568
+        },
+        {
+          "treebank_name": "zh_pud",
+          "genre_category": "written",
+          "family": "Sino-Tibetan",
+          "mean_dd": 4.2070093457943925,
+          "n_deps": 4280,
+          "mean_sentence_length": 25.11214953271028
+        }
+      ]
+    },
+    "outlier_families": [
+      {
+        "family": "Turkic",
+        "outcome": "a_param",
+        "effect": 0.7188320798582309,
+        "se": 0.31287378160604773,
+        "n_treebanks": 2,
+        "mean_value": 1.6226394015862176,
+        "global_mean": 0.9038073217279866
+      },
+      {
+        "family": "Turkic",
+        "outcome": "b_param",
+        "effect": -0.2908498245305241,
+        "se": 0.10893686276807545,
+        "n_treebanks": 2,
+        "mean_value": 0.03140914487356174,
+        "global_mean": 0.3222589694040858
+      }
+    ],
+    "robustness": {
+      "bootstrap": {
+        "a_param_mean_ci": [
+          0.8501500619232834,
+          0.9551501845557141
+        ],
+        "b_param_mean_ci": [
+          0.2972238613932824,
+          0.34488795097884334
+        ]
+      },
+      "distribution_comparison": [
+        {
+          "treebank": "ko_gsd",
+          "za_a": 1.4209217992066445,
+          "za_b": 0.10889506439152592,
+          "exp_lambda": 0.29273504273504275
+        },
+        {
+          "treebank": "en_atis",
+          "za_a": 0.7793042296811129,
+          "za_b": 0.5282061062455036,
+          "exp_lambda": 0.43334452652787103
+        },
+        {
+          "treebank": "en_childes",
+          "za_a": -0.22506440233891886,
+          "za_b": 1.0562153139896877,
+          "exp_lambda": 0.44048903272204243
+        },
+        {
+          "treebank": "en_ewt",
+          "za_a": 0.7411210206000688,
+          "za_b": 0.3350926930224879,
+          "exp_lambda": 0.26029279952195994
+        },
+        {
+          "treebank": "en_gentle",
+          "za_a": 0.861682976683342,
+          "za_b": 0.3448749241187167,
+          "exp_lambda": 0.29418650019508386
+        },
+        {
+          "treebank": "en_gum",
+          "za_a": 0.8159284281354413,
+          "za_b": 0.32082435971705475,
+          "exp_lambda": 0.26890539564634275
+        },
+        {
+          "treebank": "en_gumreddit",
+          "za_a": 0.6117451208575002,
+          "za_b": 0.39165410079270624,
+          "exp_lambda": 0.2749381098004951
+        },
+        {
+          "treebank": "en_lines",
+          "za_a": 0.6255652859527658,
+          "za_b": 0.4040877431506101,
+          "exp_lambda": 0.29204146320568836
+        },
+        {
+          "treebank": "en_littleprince",
+          "za_a": 0.41089543506268217,
+          "za_b": 0.48301811335976425,
+          "exp_lambda": 0.2940133910988578
+        },
+        {
+          "treebank": "en_partut",
+          "za_a": 0.7327607885687398,
+          "za_b": 0.34673789923224907,
+          "exp_lambda": 0.2666426587097438
+        },
+        {
+          "treebank": "en_pronouns",
+          "za_a": 0.599139121349404,
+          "za_b": 0.5740104000154647,
+          "exp_lambda": 0.4788732394366197
+        },
+        {
+          "treebank": "en_pud",
+          "za_a": 0.6907869359223388,
+          "za_b": 0.3463734873811016,
+          "exp_lambda": 0.27189642041127193
+        },
+        {
+          "treebank": "th_pud",
+          "za_a": 1.4127851487168308,
+          "za_b": 0.18194737592089946,
+          "exp_lambda": 0.35108794197642795
+        },
+        {
+          "treebank": "tr_imst",
+          "za_a": 1.4911250597730614,
+          "za_b": 0.08444630637698441,
+          "exp_lambda": 0.30740417030840306
+        },
+        {
+          "treebank": "tr_pud",
+          "za_a": 1.7541537433993737,
+          "za_b": -0.021628016629860934,
+          "exp_lambda": 0.27356463002763276
+        },
+        {
+          "treebank": "vi_vtb",
+          "za_a": 1.2726440329422832,
+          "za_b": 0.17572470732251316,
+          "exp_lambda": 0.33697563426274807
+        },
+        {
+          "treebank": "yo_ytb",
+          "za_a": 0.7271813110201237,
+          "za_b": 0.3509327225297222,
+          "exp_lambda": 0.2852417302798982
+        },
+        {
+          "treebank": "hu_szeged",
+          "za_a": 0.8733492141615378,
+          "za_b": 0.2827990129839223,
+          "exp_lambda": 0.2884864165588616
+        },
+        {
+          "treebank": "id_gsd",
+          "za_a": 1.4096880244578145,
+          "za_b": 0.15697782235619198,
+          "exp_lambda": 0.3118310261167404
+        },
+        {
+          "treebank": "ja_gsd",
+          "za_a": 1.2609424047302744,
+          "za_b": 0.19623662648300752,
+          "exp_lambda": 0.2824436536180308
+        },
+        {
+          "treebank": "ja_pud",
+          "za_a": 1.4638039932690463,
+          "za_b": 0.10494070590402023,
+          "exp_lambda": 0.2577074415185714
+        },
+        {
+          "treebank": "fi_pud",
+          "za_a": 0.8598721126422941,
+          "za_b": 0.30717418180869344,
+          "exp_lambda": 0.30271342287929326
+        },
+        {
+          "treebank": "fr_alts",
+          "za_a": 1.1305218410289868,
+          "za_b": 0.17645552830612327,
+          "exp_lambda": 0.19028262176788938
+        },
+        {
+          "treebank": "fr_fqb",
+          "za_a": 0.6345468923031057,
+          "za_b": 0.4888390356437678,
+          "exp_lambda": 0.3700447570332481
+        },
+        {
+          "treebank": "fr_gsd",
+          "za_a": 0.9253889310069559,
+          "za_b": 0.29941393938856586,
+          "exp_lambda": 0.28266137915840495
+        },
+        {
+          "treebank": "fr_parisstories",
+          "za_a": 0.4378629699536897,
+          "za_b": 0.45084295413781794,
+          "exp_lambda": 0.2812415896653808
+        },
+        {
+          "treebank": "fr_partut",
+          "za_a": 0.9215368059574733,
+          "za_b": 0.2887437948948309,
+          "exp_lambda": 0.2648006710520507
+        },
+        {
+          "treebank": "fr_poitevindivital",
+          "za_a": 0.9145052271574051,
+          "za_b": 0.29899760375490203,
+          "exp_lambda": 0.27691156292877633
+        },
+        {
+          "treebank": "fr_pud",
+          "za_a": 0.9076998289689464,
+          "za_b": 0.2949498221671866,
+          "exp_lambda": 0.2831263529679845
+        },
+        {
+          "treebank": "fr_rhapsodie",
+          "za_a": 0.617676793789839,
+          "za_b": 0.41715292841061236,
+          "exp_lambda": 0.295481220657277
+        },
+        {
+          "treebank": "fr_sequoia",
+          "za_a": 0.865834191891696,
+          "za_b": 0.33075110507006106,
+          "exp_lambda": 0.2912504994007191
+        },
+        {
+          "treebank": "ka_glc",
+          "za_a": 1.1591117007528278,
+          "za_b": 0.200912541818467,
+          "exp_lambda": 0.2817657586001193
+        },
+        {
+          "treebank": "ru_gsd",
+          "za_a": 1.0334853827381507,
+          "za_b": 0.2707520883559039,
+          "exp_lambda": 0.30164995658009003
+        },
+        {
+          "treebank": "ru_poetry",
+          "za_a": 0.802201500737757,
+          "za_b": 0.3396566941882734,
+          "exp_lambda": 0.2928887951044524
+        },
+        {
+          "treebank": "ru_pud",
+          "za_a": 1.029837220148844,
+          "za_b": 0.2510641070935906,
+          "exp_lambda": 0.29087359687652514
+        },
+        {
+          "treebank": "ru_syntagrus",
+          "za_a": 0.5832428045394662,
+          "za_b": 0.4575612979522674,
+          "exp_lambda": 0.32515168229453945
+        },
+        {
+          "treebank": "ru_taiga",
+          "za_a": 0.8014204037003835,
+          "za_b": 0.3660869774528973,
+          "exp_lambda": 0.28839851431068386
+        },
+        {
+          "treebank": "es_ancora",
+          "za_a": 1.0704789902967862,
+          "za_b": 0.2306649630377678,
+          "exp_lambda": 0.2579659670668744
+        },
+        {
+          "treebank": "es_coser",
+          "za_a": 0.630823901602839,
+          "za_b": 0.4441717713692023,
+          "exp_lambda": 0.315606417592281
+        },
+        {
+          "treebank": "es_gsd",
+          "za_a": 1.0108754836798715,
+          "za_b": 0.2733484172643834,
+          "exp_lambda": 0.2804219942632116
+        },
+        {
+          "treebank": "es_pud",
+          "za_a": 0.9887175357986683,
+          "za_b": 0.27271052478793384,
+          "exp_lambda": 0.28900364520048605
+        }
+      ],
+      "fdr_note": "FDR correction should be applied to mixed model p-values"
+    }
+  }
+}

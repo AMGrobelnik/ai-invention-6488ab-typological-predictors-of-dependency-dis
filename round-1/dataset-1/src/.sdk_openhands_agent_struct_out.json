@@ -1,0 +1,30 @@
+{
+  "title": "UD treebank dependency distances with WALS features",
+  "layman_summary": "Dataset of 979,098 dependency distances from 350 Universal Dependencies treebanks across 193 languages, with typological features from WALS and genre categorization for studying dependency distance minimization patterns.",
+  "summary": "This dataset contains dependency distance measurements computed from all 350+ UD treebanks available on HuggingFace (commul/universal_dependencies). For each non-root dependency in every sentence, the dependency distance (absolute difference between head and dependent positions) was computed. Languages were mapped to WALS typological features including word order (1A), morphological complexity (20A, 26A), and case marking (49A, 51A). Treebanks were categorized by genre (spoken, written formal, written informal) based on name analysis. The dataset contains 979,098 dependency observations from 193 languages, with 80+ languages having complete WALS feature mappings. Output files are split into 7 parts to stay under 300MB limit. The dataset is ready for mixed-effects modeling and quantitative typological analysis.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": [
+          "full_data_out_parts/full_data_out_1.json",
+          "full_data_out_parts/full_data_out_2.json",
+          "full_data_out_parts/full_data_out_3.json",
+          "full_data_out_parts/full_data_out_4.json",
+          "full_data_out_parts/full_data_out_5.json",
+          "full_data_out_parts/full_data_out_6.json",
+          "full_data_out_parts/full_data_out_7.json"
+        ],
+        "mini": "data_out_mini.json",
+        "preview": "data_out_preview.json"
+      }
+    ]
+  },
+  "upload_ignore_regexes": [
+    "(^|/)logs/",
+    "(^|/)\\.venv/",
+    "(^|/)temp/",
+    "(^|/)__pycache__/",
+    "(^|/).*\\.pyc"
+  ]
+}

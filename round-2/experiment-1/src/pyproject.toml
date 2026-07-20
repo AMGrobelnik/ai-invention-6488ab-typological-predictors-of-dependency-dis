@@ -1,0 +1,17 @@
+[project]
+name = "za-distribution-experiment"
+version = "0.1.0"
+description = "Fit ZA distributions and run mixed-effects models on UD treebanks"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy==2.5.1",
+    "pandas==3.0.3",
+    "scipy==1.18.0",
+    "statsmodels==0.14.6",
+    "loguru==0.7.3",
+    "pyarrow==25.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

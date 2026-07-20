@@ -1,0 +1,39 @@
+{
+  "datasets": [
+    {
+      "dataset": "wals_ud_mapping",
+      "examples": [
+        {
+          "input": "{\"confidence\": \"high\", \"genre\": \"news, reviews, emails, weblogs\", \"iso_639_3\": \"eng\", \"ud_language_code\": \"en\", \"ud_treebank\": \"en_ewt\", \"wals_language_name\": \"English\"}",
+          "output": "{\"wals_features\": {\"1A\": {\"description\": \"Order of Subject, Object and Verb\", \"value\": \"3\", \"value_description\": \"Average\"}, \"20A\": {\"description\": \"Fusion of Inflectional Morphology\", \"value\": \"1\", \"value_description\": \"Exclusively concatenative\"}, \"26A\": {\"description\": \"Exponence of Selected Inflectional Categories\", \"value\": \"2\", \"value_description\": \"Strongly suffixing\"}, \"49A\": {\"description\": \"Number of Cases\", \"value\": \"2\", \"value_description\": \"2 cases\"}, \"51A\": {\"description\": \"Locus of Marking in the Clause\", \"value\": \"9\", \"value_description\": \"No case affixes or adpositional clitics\"}}, \"wals_language_id\": \"eng\"}",
+          "metadata_treebank": "en_ewt",
+          "metadata_language_code": "en",
+          "metadata_iso_639_3": "eng",
+          "metadata_confidence": "high",
+          "metadata_genre": "news, reviews, emails, weblogs",
+          "metadata_num_features": 5
+        },
+        {
+          "input": "{\"confidence\": \"high\", \"genre\": \"academic, fiction, news, spoken, web\", \"iso_639_3\": \"eng\", \"ud_language_code\": \"en\", \"ud_treebank\": \"en_gum\", \"wals_language_name\": \"English\"}",
+          "output": "{\"wals_features\": {\"1A\": {\"description\": \"Order of Subject, Object and Verb\", \"value\": \"3\", \"value_description\": \"Average\"}, \"20A\": {\"description\": \"Fusion of Inflectional Morphology\", \"value\": \"1\", \"value_description\": \"Exclusively concatenative\"}, \"26A\": {\"description\": \"Exponence of Selected Inflectional Categories\", \"value\": \"2\", \"value_description\": \"Strongly suffixing\"}, \"49A\": {\"description\": \"Number of Cases\", \"value\": \"2\", \"value_description\": \"2 cases\"}, \"51A\": {\"description\": \"Locus of Marking in the Clause\", \"value\": \"9\", \"value_description\": \"No case affixes or adpositional clitics\"}}, \"wals_language_id\": \"eng\"}",
+          "metadata_treebank": "en_gum",
+          "metadata_language_code": "en",
+          "metadata_iso_639_3": "eng",
+          "metadata_confidence": "high",
+          "metadata_genre": "academic, fiction, news, spoken, web",
+          "metadata_num_features": 5
+        },
+        {
+          "input": "{\"confidence\": \"high\", \"genre\": \"fiction\", \"iso_639_3\": \"eng\", \"ud_language_code\": \"en\", \"ud_treebank\": \"en_lines\", \"wals_language_name\": \"English\"}",
+          "output": "{\"wals_features\": {\"1A\": {\"description\": \"Order of Subject, Object and Verb\", \"value\": \"3\", \"value_description\": \"Average\"}, \"20A\": {\"description\": \"Fusion of Inflectional Morphology\", \"value\": \"1\", \"value_description\": \"Exclusively concatenative\"}, \"26A\": {\"description\": \"Exponence of Selected Inflectional Categories\", \"value\": \"2\", \"value_description\": \"Strongly suffixing\"}, \"49A\": {\"description\": \"Number of Cases\", \"value\": \"2\", \"value_description\": \"2 cases\"}, \"51A\": {\"description\": \"Locus of Marking in the Clause\", \"value\": \"9\", \"value_description\": \"No case affixes or adpositional clitics\"}}, \"wals_language_id\": \"eng\"}",
+          "metadata_treebank": "en_lines",
+          "metadata_language_code": "en",
+          "metadata_iso_639_3": "eng",
+          "metadata_confidence": "high",
+          "metadata_genre": "fiction",
+          "metadata_num_features": 5
+        }
+      ]
+    }
+  ]
+}

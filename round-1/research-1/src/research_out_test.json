@@ -1,0 +1,14 @@
+{
+  "title": "Methodological review for dependency distance typology study",
+  "summary": "This methodological review provides comprehensive guidance for studying dependency distance minimization across Universal Dependencies treebanks, addressing mixed-effects models, distribution fitting, and genre effects.",
+  "answer": "Test answer with citation [1].",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://example.com",
+      "title": "Test Source",
+      "summary": "Test summary"
+    }
+  ],
+  "follow_up_questions": ["Test question?"]
+}
