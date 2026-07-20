@@ -1,0 +1,809 @@
+{
+  "datasets": [
+    {
+      "dataset": "ud_dependency_distances",
+      "examples": [
+        {
+          "input": "{\"treebank_name\": \"fro_altm\", \"language\": \"fro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 53, \"deprel\": \"case\", \"head_position\": 10, \"dependent_position\": 9, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1314_Atir_1_1_40_1_1",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"qaf_arabizi\", \"language\": \"qaf\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 3, \"deprel\": \"advmod\", \"head_position\": 3, \"dependent_position\": 2, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "3290",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_birchbark\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 91, \"deprel\": \"case\", \"head_position\": 85, \"dependent_position\": 84, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "161-1",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"sme_giella\", \"language\": \"sme\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 6, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 5, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "5",
+          "metadata_sentence_id": "1266",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_pud\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"written_formal\", \"sentence_length\": 25, \"deprel\": \"acl:relcl\", \"head_position\": 12, \"dependent_position\": 11, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "n01053036",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_udante\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 13, \"deprel\": \"obl\", \"head_position\": 12, \"dependent_position\": 8, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "4",
+          "metadata_sentence_id": "Mon-105",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_ittb\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 32, \"deprel\": \"case\", \"head_position\": 15, \"dependent_position\": 14, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "train-s152",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"mt_mudt\", \"language\": \"mt\", \"family\": \"Afro-Asiatic\", \"genre\": \"unknown\", \"sentence_length\": 26, \"deprel\": \"obj\", \"head_position\": 19, \"dependent_position\": 21, \"wals_1A\": \"VSO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "2",
+          "metadata_sentence_id": "02_02J01:30",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"mr_cmupan\", \"language\": \"mr\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 9, \"deprel\": \"punct\", \"head_position\": 8, \"dependent_position\": 9, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "Cmupan_27",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_ittb\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 39, \"deprel\": \"obl:arg\", \"head_position\": 35, \"dependent_position\": 31, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "4",
+          "metadata_sentence_id": "train-s191",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_littleprince\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"unknown\", \"sentence_length\": 11, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 8, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "8",
+          "metadata_sentence_id": "lpp.ko02-054",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"oge_glc\", \"language\": \"oge\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 30, \"deprel\": \"obj\", \"head_position\": 22, \"dependent_position\": 20, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "OGLC_00140",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"no_bokmaal\", \"language\": \"no\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 49, \"deprel\": \"punct\", \"head_position\": 24, \"dependent_position\": 26, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "2",
+          "metadata_sentence_id": "000087",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_altm\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 323, \"deprel\": \"mark\", \"head_position\": 61, \"dependent_position\": 60, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1425_Style_1_2_1_1_11",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_udante\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 69, \"deprel\": \"cop\", \"head_position\": 53, \"dependent_position\": 54, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "Mon-61",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_ruthenian\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 27, \"deprel\": \"case\", \"head_position\": 20, \"dependent_position\": 19, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "polotsk__135-19",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"pro_corag\", \"language\": \"pro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 178, \"deprel\": \"flat\", \"head_position\": 60, \"dependent_position\": 61, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1214-1342_Deux_1_1_6_3_4",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_alksnis\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 44, \"deprel\": \"punct\", \"head_position\": 23, \"dependent_position\": 22, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "Antanaicio_rec_77s-s46",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_profiterole\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 5, \"deprel\": \"punct\", \"head_position\": 2, \"dependent_position\": 5, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "3",
+          "metadata_sentence_id": "235",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_ruthenian\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 75, \"deprel\": \"det\", \"head_position\": 4, \"dependent_position\": 6, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "polotsk__161-6",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"oge_glc\", \"language\": \"oge\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 30, \"deprel\": \"cop\", \"head_position\": 7, \"dependent_position\": 6, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "OGLC_00140",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"fro_altm\", \"language\": \"fro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 124, \"deprel\": \"punct\", \"head_position\": 11, \"dependent_position\": 17, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "6",
+          "metadata_sentence_id": "1314_Atir_1_1_64_1_1",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_ittb\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 9, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 7, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "7",
+          "metadata_sentence_id": "train-s187",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_ruthenian\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 18, \"deprel\": \"punct\", \"head_position\": 9, \"dependent_position\": 5, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "4",
+          "metadata_sentence_id": "polotsk__156-5",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"axm_armtdp\", \"language\": \"axm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 34, \"deprel\": \"punct\", \"head_position\": 28, \"dependent_position\": 24, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "4",
+          "metadata_sentence_id": "medical-00AB-00010IEA",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"oge_glc\", \"language\": \"oge\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 27, \"deprel\": \"punct\", \"head_position\": 5, \"dependent_position\": 27, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "22",
+          "metadata_sentence_id": "OGLC_00137",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_alksnis\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 22, \"deprel\": \"punct\", \"head_position\": 6, \"dependent_position\": 22, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "16",
+          "metadata_sentence_id": "Antanaicio_rec_77s-s14",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"no_bokmaal\", \"language\": \"no\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 12, \"deprel\": \"case\", \"head_position\": 5, \"dependent_position\": 4, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "000015",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_ittb\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 19, \"deprel\": \"conj\", \"head_position\": 5, \"dependent_position\": 11, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "6",
+          "metadata_sentence_id": "train-s98",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_kaist\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"unknown\", \"sentence_length\": 8, \"deprel\": \"punct\", \"head_position\": 7, \"dependent_position\": 8, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "M2TA_065-s109",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lv_lvtb\", \"language\": \"lv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 30, \"deprel\": \"punct\", \"head_position\": 4, \"dependent_position\": 30, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "26",
+          "metadata_sentence_id": "a-c33-p25s5",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"no_bokmaal\", \"language\": \"no\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 19, \"deprel\": \"obj\", \"head_position\": 15, \"dependent_position\": 16, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "000042",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_littleprince\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"unknown\", \"sentence_length\": 3, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 2, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "2",
+          "metadata_sentence_id": "lpp.ko02-046",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"pro_corag\", \"language\": \"pro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 76, \"deprel\": \"det\", \"head_position\": 22, \"dependent_position\": 21, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1214-1342_Deux_1_1_7_39_1",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"pro_corag\", \"language\": \"pro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 46, \"deprel\": \"case\", \"head_position\": 8, \"dependent_position\": 6, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "1214-1342_Deux_1_1_7_5_2",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_proiel\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 15, \"deprel\": \"case\", \"head_position\": 12, \"dependent_position\": 11, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "12823",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_littleprince\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"unknown\", \"sentence_length\": 16, \"deprel\": \"ccomp\", \"head_position\": 13, \"dependent_position\": 2, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "11",
+          "metadata_sentence_id": "lpp.ko04-036",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_birchbark\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 5, \"deprel\": \"case\", \"head_position\": 2, \"dependent_position\": 1, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "138-3",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_ittb\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 12, \"deprel\": \"obl\", \"head_position\": 11, \"dependent_position\": 8, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "3",
+          "metadata_sentence_id": "train-s151",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ota_dudu\", \"language\": \"ota\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 10, \"deprel\": \"flat\", \"head_position\": 1, \"dependent_position\": 2, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1099",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_birchbark\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 3, \"deprel\": \"case\", \"head_position\": 3, \"dependent_position\": 2, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "152-2",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"yrl_complin\", \"language\": \"yrl\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 27, \"deprel\": \"obl\", \"head_position\": 14, \"dependent_position\": 17, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "3",
+          "metadata_sentence_id": "NTLN2019:5:2:38",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_llct\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 10, \"deprel\": \"nmod\", \"head_position\": 4, \"dependent_position\": 9, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "5",
+          "metadata_sentence_id": "train-s40",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"qaf_arabizi\", \"language\": \"qaf\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 7, \"deprel\": \"nsubj\", \"head_position\": 5, \"dependent_position\": 6, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "2203",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_altm\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 121, \"deprel\": \"conj\", \"head_position\": 23, \"dependent_position\": 53, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "30",
+          "metadata_sentence_id": "1425_Style_1_5_1_1_28",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"gv_cadhan\", \"language\": \"gv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 29, \"deprel\": \"obl\", \"head_position\": 13, \"dependent_position\": 15, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "aa_265",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_gsd\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"unknown\", \"sentence_length\": 10, \"deprel\": \"advcl\", \"head_position\": 6, \"dependent_position\": 4, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "2",
+          "metadata_sentence_id": "train-s54",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"mt_mudt\", \"language\": \"mt\", \"family\": \"Afro-Asiatic\", \"genre\": \"unknown\", \"sentence_length\": 31, \"deprel\": \"flat:name\", \"head_position\": 29, \"dependent_position\": 30, \"wals_1A\": \"VSO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "02_02J01:19",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_alksnis\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 17, \"deprel\": \"advmod:emph\", \"head_position\": 9, \"dependent_position\": 8, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "Antanaicio_rec_77s-s59",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_hse\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 29, \"deprel\": \"xcomp\", \"head_position\": 10, \"dependent_position\": 11, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "25",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_perseus\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 7, \"deprel\": \"vocative\", \"head_position\": 1, \"dependent_position\": 4, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "3",
+          "metadata_sentence_id": "phi0975.phi001.perseus-lat1.tb.xml@482",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_llct\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 3, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 1, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "train-s47",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"gv_cadhan\", \"language\": \"gv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 15, \"deprel\": \"nmod\", \"head_position\": 13, \"dependent_position\": 14, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "aa_276",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_udante\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 25, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 12, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "12",
+          "metadata_sentence_id": "Mon-57",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"gya_autogramm\", \"language\": \"gya\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 13, \"deprel\": \"cc\", \"head_position\": 3, \"dependent_position\": 1, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "GYA_PRD_NARR_01_T16-C6_057-057",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ky_ktmu\", \"language\": \"ky\", \"family\": \"Turkic\", \"genre\": \"unknown\", \"sentence_length\": 16, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 15, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "15",
+          "metadata_sentence_id": "1436",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_pud\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"written_formal\", \"sentence_length\": 23, \"deprel\": \"cop\", \"head_position\": 9, \"dependent_position\": 10, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "n01050014",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"mt_mudt\", \"language\": \"mt\", \"family\": \"Afro-Asiatic\", \"genre\": \"unknown\", \"sentence_length\": 34, \"deprel\": \"case\", \"head_position\": 28, \"dependent_position\": 26, \"wals_1A\": \"VSO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "2",
+          "metadata_sentence_id": "02_02J01:2",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_profiterole\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 52, \"deprel\": \"nsubj\", \"head_position\": 14, \"dependent_position\": 11, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "3",
+          "metadata_sentence_id": "27",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_rnc\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 19, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 4, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "4",
+          "metadata_sentence_id": "Bezobrazov_1_012-4",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ota_dudu\", \"language\": \"ota\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 7, \"deprel\": \"compound:lvc\", \"head_position\": 1, \"dependent_position\": 2, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "439",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_alksnis\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 12, \"deprel\": \"advcl\", \"head_position\": 6, \"dependent_position\": 10, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "4",
+          "metadata_sentence_id": "biudzetas-s6",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_ittb\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 11, \"deprel\": \"csubj:pass\", \"head_position\": 2, \"dependent_position\": 5, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "3",
+          "metadata_sentence_id": "train-s149",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_rnc\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 12, \"deprel\": \"nsubj\", \"head_position\": 11, \"dependent_position\": 10, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "Bezobrazov_1_014-10",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_udante\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 40, \"deprel\": \"amod\", \"head_position\": 9, \"dependent_position\": 10, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "Mon-183",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ota_boun\", \"language\": \"ota\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 16, \"deprel\": \"obj\", \"head_position\": 10, \"dependent_position\": 9, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "bed_rn_14",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"yrk_tundra\", \"language\": \"yrk\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 11, \"deprel\": \"advcl\", \"head_position\": 7, \"dependent_position\": 6, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "yrk_s_MapTask_002_22",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"mr_cmupan\", \"language\": \"mr\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 15, \"deprel\": \"advcl\", \"head_position\": 7, \"dependent_position\": 3, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "4",
+          "metadata_sentence_id": "Cmupan_3",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_torot\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 9, \"deprel\": \"nsubj\", \"head_position\": 9, \"dependent_position\": 8, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "280581",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_ruthenian\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 33, \"deprel\": \"advmod\", \"head_position\": 29, \"dependent_position\": 30, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "polotsk__158-1",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_ruthenian\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 19, \"deprel\": \"advcl\", \"head_position\": 11, \"dependent_position\": 18, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "7",
+          "metadata_sentence_id": "polotsk__161-13",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"fro_altm\", \"language\": \"fro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 39, \"deprel\": \"nsubj\", \"head_position\": 6, \"dependent_position\": 4, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "1314_Atir_1_1_45_1_1",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_circse\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 23, \"deprel\": \"case\", \"head_position\": 10, \"dependent_position\": 9, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "Latin_SenecaYounger_HercF_poetry-10",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"fro_altm\", \"language\": \"fro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 71, \"deprel\": \"case\", \"head_position\": 69, \"dependent_position\": 68, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1314_Atir_1_1_41_1_1",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_kaist\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"unknown\", \"sentence_length\": 10, \"deprel\": \"xcomp\", \"head_position\": 6, \"dependent_position\": 5, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "M2TA_065-s102",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_alksnis\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 14, \"deprel\": \"nmod\", \"head_position\": 6, \"dependent_position\": 5, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "balandzio-s15",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"sme_giella\", \"language\": \"sme\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 21, \"deprel\": \"advmod\", \"head_position\": 15, \"dependent_position\": 19, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "4",
+          "metadata_sentence_id": "1263",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ml_ufal\", \"language\": \"ml\", \"family\": \"Dravidian\", \"genre\": \"unknown\", \"sentence_length\": 14, \"deprel\": \"cop\", \"head_position\": 2, \"dependent_position\": 10, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "8",
+          "metadata_sentence_id": "indiccorp126",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_llct\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 103, \"deprel\": \"obl\", \"head_position\": 72, \"dependent_position\": 71, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "train-s175",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_altm\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 53, \"deprel\": \"case\", \"head_position\": 50, \"dependent_position\": 49, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1425_Style_1_3_1_3_5",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"pcm_nsc\", \"language\": \"pcm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 19, \"deprel\": \"punct\", \"head_position\": 6, \"dependent_position\": 5, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "ABJ_GWA_02_Market-Food-Church_DG__175",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_altm\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 74, \"deprel\": \"aux\", \"head_position\": 41, \"dependent_position\": 40, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1425_Style_1_10_1_1_27",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_alksnis\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 26, \"deprel\": \"acl\", \"head_position\": 10, \"dependent_position\": 12, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "2",
+          "metadata_sentence_id": "Antanaicio_rec_77s-s6",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"cu_proiel\", \"language\": \"cu\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 38, \"deprel\": \"obj\", \"head_position\": 26, \"dependent_position\": 27, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "238211",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ota_dudu\", \"language\": \"ota\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 9, \"deprel\": \"advmod\", \"head_position\": 8, \"dependent_position\": 1, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "7",
+          "metadata_sentence_id": "339",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_pud\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"written_formal\", \"sentence_length\": 20, \"deprel\": \"advmod\", \"head_position\": 18, \"dependent_position\": 17, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "n01022027",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"qaf_arabizi\", \"language\": \"qaf\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 14, \"deprel\": \"obl\", \"head_position\": 8, \"dependent_position\": 10, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "4225",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_pud\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"written_formal\", \"sentence_length\": 22, \"deprel\": \"acl:relcl\", \"head_position\": 8, \"dependent_position\": 7, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "n01002032",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_profiterole\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 34, \"deprel\": \"amod\", \"head_position\": 2, \"dependent_position\": 1, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "90",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"ko_ksl\", \"language\": \"ko\", \"family\": \"Koreanic\", \"genre\": \"unknown\", \"sentence_length\": 4, \"deprel\": \"nsubj\", \"head_position\": 3, \"dependent_position\": 1, \"wals_1A\": \"SOV\", \"wals_20A\": \"agglutinative\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "2",
+          "metadata_sentence_id": "KH-C100014-13-6206",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_torot\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 7, \"deprel\": \"orphan\", \"head_position\": 3, \"dependent_position\": 5, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "280587",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"pro_corag\", \"language\": \"pro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 31, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 3, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "3",
+          "metadata_sentence_id": "1214-1342_Deux_1_1_7_55_1",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_udante\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 35, \"deprel\": \"punct\", \"head_position\": 20, \"dependent_position\": 19, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "Mon-69",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_altm\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 74, \"deprel\": \"det\", \"head_position\": 44, \"dependent_position\": 43, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "1425_Style_1_3_1_4_23",
+          "metadata_split": "test",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"frm_profiterole\", \"language\": \"frm\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 77, \"deprel\": \"mark\", \"head_position\": 70, \"dependent_position\": 68, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "2",
+          "metadata_sentence_id": "6",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"orv_ruthenian\", \"language\": \"orv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 52, \"deprel\": \"cc\", \"head_position\": 18, \"dependent_position\": 17, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "1",
+          "metadata_sentence_id": "polotsk__166-3",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lt_alksnis\", \"language\": \"lt\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 6, \"deprel\": \"root\", \"head_position\": 0, \"dependent_position\": 1, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "baznyciomis-s38",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"pro_corag\", \"language\": \"pro\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 109, \"deprel\": \"conj\", \"head_position\": 26, \"dependent_position\": 57, \"wals_1A\": \"NA\", \"wals_20A\": \"NA\", \"wals_26A\": \"NA\", \"wals_49A\": \"NA\", \"wals_51A\": \"NA\"}",
+          "output": "31",
+          "metadata_sentence_id": "1214-1342_Deux_1_1_7_49_1",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"lv_lvtb\", \"language\": \"lv\", \"family\": \"Unknown\", \"genre\": \"unknown\", \"sentence_length\": 26, \"deprel\": \"det\", \"head_position\": 24, \"dependent_position\": 23, \"wals_1A\": \"SVO\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "1",
+          "metadata_sentence_id": "a-c30-p41s2",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        },
+        {
+          "input": "{\"treebank_name\": \"la_circse\", \"language\": \"la\", \"family\": \"Indo-European\", \"genre\": \"unknown\", \"sentence_length\": 25, \"deprel\": \"obl\", \"head_position\": 15, \"dependent_position\": 12, \"wals_1A\": \"SOV\", \"wals_20A\": \"fusional\", \"wals_26A\": \"moderate\", \"wals_49A\": 0, \"wals_51A\": \"suffixing\"}",
+          "output": "3",
+          "metadata_sentence_id": "Latin_SenecaYounger_HercF_poetry-57",
+          "metadata_split": "train",
+          "metadata_task_type": "regression",
+          "metadata_target_name": "dependency_distance"
+        }
+      ]
+    }
+  ]
+}
