@@ -1,0 +1,14 @@
+{
+  "title": "Typological Predictors of Dependency Distance Distributions",
+  "summary": "This paper presents a comprehensive investigation of typological predictors of dependency distance (DD) distribution shapes across 41 Universal Dependencies (UD) treebanks. The study makes three key contributions: (1) It demonstrates that WALS locus of marking feature (51A) significantly predicts DD distribution shape parameters (a_param: β = -0.024, p = 0.034; b_param: β = 0.014, p = 0.018) using mixed-effects models; (2) It provides a quantitative comparison of spoken vs. written genres, finding no significant difference (p = 0.488), though this result is limited by the small spoken sample (2 treebanks); and (3) It identifies the Turkic language family as deviating from the universal DDM pattern. The paper includes all required sections (Introduction, Related Work, Methods, Results, Discussion, Conclusion, Acknowledgments, References), 3 figures (research overview, dataset composition, spoken vs. written comparison), and a complete bibliography with 18 references. The LaTeX source was compiled to a 12-page PDF using pdflatex and bibtex, with all formatting issues resolved (Unicode characters, overfull hbox warnings). The paper is formatted for submission to computational linguistics venues such as ACL, EMNLP, or Computational Linguistics journal.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig1_v0.jpg",
+      "figures/fig2_v0.jpg",
+      "figures/fig3_v0.jpg"
+    ]
+  }
+}

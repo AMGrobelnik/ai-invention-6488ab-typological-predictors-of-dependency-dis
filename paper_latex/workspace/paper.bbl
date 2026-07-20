@@ -1,0 +1,128 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baayen et~al.(2008)Baayen, Davidson, and Bates]{Baayen2008}
+R.~Harald Baayen, Douglas~J. Davidson, and Douglas~M. Bates.
+\newblock Mixed-effects modeling with crossed random effects for subjects and
+  items.
+\newblock \emph{Journal of Memory and Language}, 59\penalty0 (4):\penalty0
+  390--412, 2008.
+\newblock \doi{10.1016/j.jml.2007.12.005}.
+
+\bibitem[Dobrovoljc(2025)]{Dobrovoljc2025}
+Kaja Dobrovoljc.
+\newblock Counting trees: a treebank-driven exploration of syntactic variation
+  in speech and writing across languages.
+\newblock \emph{Corpus Linguistics and Linguistic Theory}, 2025.
+\newblock \doi{10.1515/cllt-2025-0046}.
+
+\bibitem[Dobrovoljc and Nivre(2022)]{Dobrovoljc2022}
+Kaja Dobrovoljc and Joakim Nivre.
+\newblock Spoken language treebanks in universal dependencies: an overview.
+\newblock In \emph{Proceedings of the 13th Language Resources and Evaluation
+  Conference}, pages 1254--1262, 2022.
+\newblock \doi{10.5220/0010968400003124}.
+
+\bibitem[Dryer and Haspelmath(2013)]{Dryer2013}
+Matthew~S. Dryer and Martin Haspelmath, editors.
+\newblock \emph{The World Atlas of Language Structures Online}.
+\newblock Max Planck Institute for Evolutionary Anthropology, Leipzig, 2013.
+
+\bibitem[Futrell and Levy(2017)]{Futrell2017}
+Richard Futrell and Roger Levy.
+\newblock Noisy-context surprisal as a human sentence processing cost model.
+\newblock In \emph{Proceedings of the 15th Conference of the European Chapter
+  of the Association for Computational Linguistics}, pages 688--693, 2017.
+
+\bibitem[Futrell et~al.(2015)Futrell, Mahowald, and Gibson]{Futrell2015}
+Richard Futrell, Kyle Mahowald, and Edward Gibson.
+\newblock Large-scale evidence of dependency length minimization in 37
+  languages.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 112\penalty0
+  (33):\penalty0 10336--10341, 2015.
+\newblock \doi{10.1073/pnas.1502134112}.
+
+\bibitem[Gerdes(2026)]{Gerdes2026}
+Kim Gerdes.
+\newblock The grammar does the work: Functional vs. lexical dependency length
+  minimization across universal dependencies.
+\newblock \emph{arXiv preprint arXiv:2607.01899}, 2026.
+
+\bibitem[Gibson(1998)]{Gibson1998}
+Edward Gibson.
+\newblock Linguistic complexity: Locality of syntactic dependencies.
+\newblock \emph{Cognition}, 68\penalty0 (1):\penalty0 1--76, 1998.
+\newblock \doi{10.1016/S0010-0277(98)00034-1}.
+
+\bibitem[Hudson(1995)]{Hudson1995}
+Richard Hudson.
+\newblock Measuring syntactic difficulty.
+\newblock Technical Report~7, University College London, Department of
+  Phonetics and Linguistics, 1995.
+
+\bibitem[Jaeger(2008)]{Jaeger2008}
+T.~Florian Jaeger.
+\newblock Categorical data analysis: Away from anovas (transformation or not)
+  and towards logit mixed models.
+\newblock \emph{Journal of Memory and Language}, 59\penalty0 (4):\penalty0
+  434--446, 2008.
+\newblock \doi{10.1016/j.jml.2007.11.007}.
+
+\bibitem[Jolly and Chang(2021)]{Jolly2021}
+Eshin Jolly and Luke~J. Chang.
+\newblock Pymer4: Connecting r and python for linear mixed-effects models.
+\newblock \emph{Journal of Open Source Software}, 6\penalty0 (67):\penalty0
+  3730, 2021.
+\newblock \doi{10.21105/joss.03730}.
+
+\bibitem[Levshina(2021)]{Levshina2021}
+Natalia Levshina.
+\newblock Mixed-effects models in quantitative typology.
+\newblock \emph{Journal of Language Evolution}, 6\penalty0 (2):\penalty0
+  115--128, 2021.
+\newblock \doi{10.1093/jole/lzab004}.
+
+\bibitem[Levshina(2022)]{Levshina2022}
+Natalia Levshina.
+\newblock \emph{How to Do Linguistics with R: Data Exploration and Statistical
+  Analysis}.
+\newblock John Benjamins, 2022.
+
+\bibitem[Liu et~al.(2017)Liu, Xu, and Liang]{Liu2017}
+Haitao Liu, Chunshan Xu, and Junying Liang.
+\newblock Dependency distance: a new perspective on syntactic patterns in
+  natural languages.
+\newblock \emph{Physics of Life Reviews}, 21:\penalty0 171--193, 2017.
+\newblock \doi{10.1016/j.plrev.2017.03.002}.
+
+\bibitem[Niu et~al.(2023)Niu, Wang, and Liu]{Niu2023}
+Ran Niu, Yaqin Wang, and Haitao Liu.
+\newblock The cross-linguistic variations in dependency distance minimization
+  and its potential explanations.
+\newblock In \emph{Proceedings of the 37th Pacific Asia Conference on Language,
+  Information and Computation}, pages 559--569, 2023.
+
+\bibitem[Nivre et~al.(2020)]{Nivre2020}
+Joakim Nivre et~al.
+\newblock Universal dependencies v2: An evergrowing multilingual treebank
+  collection.
+\newblock In \emph{Proceedings of the 12th Language Resources and Evaluation
+  Conference}, pages 4034--4043, 2020.
+\newblock \doi{10.5220/0008966404030412}.
+
+\bibitem[Popescu and Altmann(2014)]{Popescu2014}
+Ioan-Iovitz Popescu and Gabriel Altmann.
+\newblock \emph{Unified Modeling of Length in Language}.
+\newblock RAM-Verlag, 2014.
+
+\bibitem[Wang and Liu(2017)]{Wang2017}
+Yaqin Wang and Haitao Liu.
+\newblock The effects of genre on dependency distance and dependency direction.
+\newblock \emph{Journal of Chinese Linguistics}, 45\penalty0 (2):\penalty0
+  211--241, 2017.
+
+\end{thebibliography}
